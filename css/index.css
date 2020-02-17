@@ -1,0 +1,32 @@
+:root {
+    --main-bg-color: white;
+    --font-family: 'Dosis', 'Open Sans', sans-serif;
+    --text-color: black;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: var(--font-family);
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    color: var(--text-color);
+}
+
+img.profile-photo {
+    width: 240px;
+    height: auto;
+    border-radius: 100%;
+}
+
+div.header {
+    margin-top: 10%;
+}
+
+div.center {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
