@@ -1,17 +1,17 @@
 :root {
-    --main-bg-color: white;
+    --main-bg-color: #16212C;
     --font-family: 'Dosis', 'Open Sans', sans-serif;
-    --text-color: black;
+    --text-color: #85A2BE;
 }
 
-body{
+body {
     background-color: var(--main-bg-color);
     font-family: var(--font-family);
     height: 100%;
     width: 100%;
 }
 
-h2{
+h2 {
     color: var(--text-color);
 }
 
@@ -31,4 +31,14 @@ div.center {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+}
+
+a.icon-link {
+    text-decoration: none;
+}
+
+img.icon {
+    width: 50px;
+    height: auto;
+    border: 0;
 }
