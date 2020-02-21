@@ -18,6 +18,7 @@ h2 {
 img.profile-photo {
     width: 240px;
     height: auto;
+    border-width: 5px;
     border-radius: 100%;
     border-style: outset;
     border-color: #37474F;
