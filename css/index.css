@@ -7,12 +7,9 @@
 body {
     background-color: var(--main-bg-color);
     font-family: var(--font-family);
-    height: 100%;
-    width: 100%;
-}
-
-h2 {
     color: var(--text-color);
+    width: 100%;
+    margin-top: 10%;
 }
 
 img.profile-photo {
@@ -24,11 +21,15 @@ img.profile-photo {
     border-color: #37474F;
 }
 
-div.header {
-    margin-top: 10%;
+div#content {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-div.center {
+div.column {
+    float: left;
+    width: 50%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
