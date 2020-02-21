@@ -41,5 +41,6 @@ a.icon-link {
 img.icon {
     width: 50px;
     height: auto;
+    margin: 5px;
     border: 0;
 }
