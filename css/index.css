@@ -1,7 +1,8 @@
 :root {
-    --main-bg-color: #16212C;
+    --main-bg-color: #ffffff;
     --font-family: 'Dosis', 'Open Sans', sans-serif;
-    --text-color: #85A2BE;
+    --text-color: #191919;
+    --profile-border-color: #b2b2b2;
 }
 
 body {
@@ -22,7 +23,7 @@ img.profile-photo {
     border-width: 5px;
     border-radius: 100%;
     border-style: outset;
-    border-color: #37474F;
+    border-color: var(--profile-border-color);
 }
 
 div#content {}
