@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: #ffffff;
-    --font-family: 'Dosis', 'Open Sans', sans-serif;
+    --font-family: "Raleway", "Courier New";
+    --font-weight: 100;
     --text-color: #191919;
     --profile-border-color: #b2b2b2;
 }
@@ -30,6 +31,12 @@ div#content {}
 
 h1 {
     font-size: 24px;
+    font-weight: var(--font-weight);
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: var(--font-weight);
 }
 
 div#header {
