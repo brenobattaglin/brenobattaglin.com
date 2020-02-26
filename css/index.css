@@ -4,6 +4,8 @@
     --font-weight: 100;
     --text-color: #191919;
     --profile-border-color: #b2b2b2;
+    --img-box-shadow: 0px 8px 5px #ccc;
+    --img-border-radius: 100%;
 }
 
 body {
@@ -22,9 +24,10 @@ img.profile-photo {
     width: 240px;
     height: auto;
     border-width: 5px;
-    border-radius: 100%;
+    border-radius: var(--img-border-radius);
     border-style: outset;
     border-color: var(--profile-border-color);
+    box-shadow: var(--img-box-shadow);
 }
 
 div#content {}
@@ -71,4 +74,6 @@ img.icon {
     height: auto;
     margin: 5px;
     border: 0;
+    border-radius: var(--img-border-radius);
+    box-shadow: var(--img-box-shadow);
 }
