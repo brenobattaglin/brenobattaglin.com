@@ -17,7 +17,6 @@ body {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
-    text-align: center;
 }
 
 img.profile-photo {
@@ -28,32 +27,39 @@ img.profile-photo {
     border-style: outset;
     border-color: var(--profile-border-color);
     box-shadow: var(--img-box-shadow);
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 
-div#content {}
+h1.title,
+h2.title {
+    font-weight: var(--font-weight);
+    text-align: center;
+}
 
-h1 {
+h1.title {
     font-size: 24px;
-    font-weight: var(--font-weight);
 }
 
-h2 {
+h2.title {
     font-size: 22px;
-    font-weight: var(--font-weight);
 }
 
 div#header {
-    float: left;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 div#content {
-    float: left;
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.content-box {
+    text-align: justify;
 }
 
 a {
@@ -65,8 +71,10 @@ a:visited {
     text-decoration: none;
 }
 
-a.icon-link {
-    text-decoration: none;
+div#icon-link-group {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 img.icon {
