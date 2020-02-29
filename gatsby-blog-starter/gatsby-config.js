@@ -3,12 +3,15 @@ module.exports = {
     title: `Breno Battaglin`,
     author: {
       name: `Breno Battaglin`,
-      summary: `who lives in Brazil developing in Android and having a minimalist life.`,
+      summary: `I am a minimalist and code.`,
     },
     description: `My personal blog.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
+      github: `brenobattaglin`,
+      linkedin: `brenobattaglin`,
       instagram: `brenobattaglin`,
+      mail: `breno.battaglin@icloud.com`,
     },
   },
   plugins: [
