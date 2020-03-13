@@ -8,10 +8,26 @@ module.exports = {
     description: `My personal blog.`,
     siteUrl: `https://brenobattaglin.com/`,
     social: {
-      github: `brenobattaglin`,
-      linkedin: `brenobattaglin`,
-      instagram: `brenobattaglin`,
-      mail: `breno.battaglin@icloud.com`,
+      github: {
+        url: `https://github.com/`,
+        user: `brenobattaglin`,
+        description: 'GitHub'
+      }, 
+      linkedin: {
+        url: `https://www.linkedin.com/in/`,
+        user: `brenobattaglin`,
+        description: 'Linkedin'
+      }, 
+      instagram: {
+        url: `https://instagram.com/`,
+        user: `brenobattaglin`,
+        description: 'Instagram'
+      }, 
+      email: {
+        url: `mailto:`,
+        user: `breno.battaglin@icloud.com`,
+        description: 'Email'
+      }
     },
   },
   plugins: [

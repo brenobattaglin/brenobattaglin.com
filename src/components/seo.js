@@ -18,7 +18,7 @@ const SEO = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
-            social { instagram }
+            social { instagram { user } }
           }
         }
       }
