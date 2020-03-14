@@ -3,7 +3,7 @@ module.exports = {
     title: `Breno Battaglin`,
     author: {
       name: `Breno Battaglin`,
-      summary: `I am a minimalist and code.`,
+      summary: `Code and minimalism.`,
     },
     description: `My personal blog.`,
     siteUrl: `https://brenobattaglin.com/`,
