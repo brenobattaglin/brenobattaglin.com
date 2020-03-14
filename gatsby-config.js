@@ -1,102 +1,58 @@
 module.exports = {
   siteMetadata: {
     title: `Breno Battaglin`,
-    author: {
-      name: `Breno Battaglin`,
-      summary: `Code and minimalism.`,
+    name: `Breno Battaglin`,
+    siteUrl: `https://https://brenobattaglin.com/`,
+    description: `Personal blog by Breno Battaglin.`,
+    hero: {
+      heading: `Welcome to my personal blog.`,
+      maxWidth: 652,
     },
-    description: `My personal blog.`,
-    siteUrl: `https://brenobattaglin.com/`,
-    social: {
-      github: {
-        url: `https://github.com/`,
-        user: `brenobattaglin`,
-        description: 'GitHub'
-      }, 
-      linkedin: {
-        url: `https://www.linkedin.com/in/`,
-        user: `brenobattaglin`,
-        description: 'Linkedin'
-      }, 
-      instagram: {
-        url: `https://instagram.com/`,
-        user: `brenobattaglin`,
-        description: 'Instagram'
-      }, 
-      email: {
-        url: `mailto:`,
-        user: `breno.battaglin@icloud.com`,
-        description: 'Email'
+    social: [
+      {
+        name: `github`,
+        url: `https://github.com/brenobattaglin`,
+      },
+      {
+        name: `instagram`,
+        url: `https://instagram.com/brenobattaglin`,
+      },
+      {
+        name: `linkedin`,
+        url: `https://www.linkedin.com/in/brenobattaglin`,
       }
-    },
+    ],
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "@narative/gatsby-theme-novela",
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        contentPosts: "content/posts",
+        contentAuthors: "content/authors",
+        basePath: "/",
+        authorsPage: true,
+        sources: {
+          local: true,
+          // contentful: true,
+        },
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 590,
-            },
-          },
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
-        ],
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Novela by Narative`,
+        short_name: `Novela`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `standalone`,
+        icon: `src/assets/favicon.png`,
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
-}
+};
