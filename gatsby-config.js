@@ -2,10 +2,10 @@ module.exports = {
   siteMetadata: {
     title: `Breno Battaglin`,
     name: `Breno Battaglin`,
-    siteUrl: `https://https://brenobattaglin.com/`,
-    description: `Personal blog by Breno Battaglin.`,
+    siteUrl: `https://brenobattaglin.com/`,
+    description: `Blog by Breno Battaglin.`,
     hero: {
-      heading: `Welcome to my personal blog.`,
+      heading: `Welcome to my blog.`,
       maxWidth: 652,
     },
     social: [
