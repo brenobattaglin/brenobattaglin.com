@@ -20,24 +20,6 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => {
               props.onOpenArticle('about')
             }}
           >
@@ -45,12 +27,22 @@ const Header = props => (
           </button>
         </li>
         <li>
+          <a href="mailto:breno.battaglin@icloud.com">
+            <button>Contact me</button>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/brenobattaglin">
+            <button>GitHub</button>
+          </a>
+        </li>
+        <li>
           <button
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle('linktree')
             }}
           >
-            Contact
+            Linktree
           </button>
         </li>
       </ul>
