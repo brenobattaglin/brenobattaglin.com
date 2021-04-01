@@ -1,17 +1,19 @@
-<a href="https://brenobattaglin.com" target="_blank">
-<img src="src/assets/screens.png" alt="breno battaglin's blog image" />
-</a>
+# gatsby-starter-dimension
 
+**This is a starter for Gatsby.js V2.**
+
+**The older V1 version of this starter can be found on the v1 branch:**
+
+Gatsby.js V2 starter based on the Dimension site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
+
+## Preview
+
+https://gatsby-dimension.surge.sh/
+
+## Installation
+
+Install this starter (assuming Gatsby is installed) by running from your CLI:
 <br/>
+`gatsby new gatsby-starter-dimension https://github.com/codebushi/gatsby-starter-dimension`
 
-# brenobattaglin.com
-
-My personal blog.
-
-
-
-Special thanks to:
-
-- [Novela](https://github.com/narative/gatsby-theme-novela) theme by [Narative](https://www.narative.co/)
-
-- Post Image: Photo by [ian dooley](https://unsplash.com/@sadswim?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/minimalist?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+Run `gatsby develop` in the terminal to start the dev site.

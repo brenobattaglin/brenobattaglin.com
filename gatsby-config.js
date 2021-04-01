@@ -1,58 +1,23 @@
 module.exports = {
   siteMetadata: {
-    title: `Breno Battaglin`,
-    name: `Breno Battaglin`,
-    siteUrl: `https://brenobattaglin.com/`,
-    description: `Blog by Breno Battaglin.`,
-    hero: {
-      heading: `Welcome to my blog.`,
-      maxWidth: 652,
-    },
-    social: [
-      {
-        name: `github`,
-        url: `https://github.com/brenobattaglin`,
-      },
-      {
-        name: `instagram`,
-        url: `https://instagram.com/brenobattaglin`,
-      },
-      {
-        name: `linkedin`,
-        url: `https://www.linkedin.com/in/brenobattaglin`,
-      }
-    ],
+    title: 'Breno Battaglin',
+    author: 'Breno Battaglin',
+    description: 'Personal website',
   },
   plugins: [
-    {
-      resolve: "@narative/gatsby-theme-novela",
-      options: {
-        contentPosts: "content/posts",
-        contentAuthors: "content/authors",
-        basePath: "/",
-        authorsPage: true,
-        sources: {
-          local: true,
-          // contentful: true,
-        },
-      },
-    },
+    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Novela by Narative`,
-        short_name: `Novela`,
-        start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
-        display: `standalone`,
-        icon: `src/assets/favicon.png`,
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-      },
-    },
+    'gatsby-plugin-sass',
   ],
-};
+}
