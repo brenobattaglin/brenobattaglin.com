@@ -30,19 +30,10 @@ class Main extends React.Component {
             <img src={pic01} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed massa
-            purus, dignissim id sollicitudin at, sodales eget ante. Nulla non
-            nunc porttitor, tincidunt mi vitae, gravida magna. Ut gravida sem
-            nec lectus congue vehicula. Sed laoreet lacus vel metus gravida, id
-            porttitor tortor rhoncus. Vestibulum ante ipsum primis in faucibus
-            orci luctus et ultrices posuere cubilia curae; Proin sed dui sed
-            purus dapibus feugiat. Donec lacinia aliquet eros at pretium.
-            Quisque vestibulum odio ut mi malesuada convallis. Cras sodales
-            lorem et nibh suscipit dignissim. Nulla mattis augue eu tristique
-            dignissim. Quisque vulputate nibh ut ante aliquam iaculis. Nullam
-            mollis magna in porttitor mollis. Ut semper feugiat ullamcorper.
-            Mauris quis tortor at nulla aliquet scelerisque. In elementum metus
-            a mollis ultrices. Sed ac rutrum tortor, sed pellentesque dui.
+          I was born in the state of Espírito Santo, Brazil. When I was a child I always loved games and tech. 
+          Growing up, I decided to do a technical programming course, and later, study computer science. 
+          At this time my carrer began as a full stack web developer.
+          Today I have a bachelor in computer science, and professional experience on mobile and web development.
           </p>
           {close}
         </article>
