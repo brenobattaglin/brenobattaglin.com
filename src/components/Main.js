@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
-import pic01 from "../images/pic01.jpg";
+import pic01 from "../images/pic01.png";
 class Main extends React.Component {
   render() {
     let close = (
@@ -26,14 +26,14 @@ class Main extends React.Component {
           style={{ display: "none" }}
         >
           <h2 className="major">About</h2>
-          <span className="image main">
+          <span className="image xsmall">
             <img src={pic01} alt="" />
           </span>
           <p>
           I was born in the state of Espírito Santo, Brazil. When I was a child I always loved games and tech. 
           Growing up, I decided to do a technical programming course, and later, study computer science. 
-          At this time my carrer began as a full stack web developer.
-          Today I have a bachelor in computer science, and professional experience on mobile and web development.
+          At this time my carrer began as a web developer.
+          Today I have a bachelor in computer science and work as software engineer.
           </p>
           {close}
         </article>
