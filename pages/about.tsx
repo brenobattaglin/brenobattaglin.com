@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import NavBar from './components/navbar'
 
-const Linktree: NextPage = () => {
+const About: NextPage = () => {
   return (
     <span>
-      Lorem ipsum
+      Lorem ipsumasdasd
     </span>
   )
 }
 
-export default Linktree
+export default About

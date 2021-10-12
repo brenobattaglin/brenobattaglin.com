@@ -2,13 +2,16 @@ import Link from 'next/link';
 
 const NavBar = () => {
     return (
-        <div>
-            <Link href='/'>
-                <a>About me</a>
+        <div className="container mx-auto w-full space-x-4 text-center">
+            <Link href='/' >
+                <a className="inline align-middle">Home</a>
             </Link>
-            <a href='mailto:breno.battaglin@icloud.com'>Contact</a>
+            <Link href='/about' >
+                <a className="inline align-middle">About me</a>
+            </Link>
+            <a href='mailto:breno.battaglin@icloud.com' className="inline align-middle">Contact</a>
             <Link href='/linktree'>
-                <a>Linktree</a>
+                <a className="inline align-middle">Linktree</a>
             </Link>
         </div>
     );
