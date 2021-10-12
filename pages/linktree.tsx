@@ -3,7 +3,9 @@ import NavBar from './components/navbar'
 
 const Home: NextPage = () => {
   return (
-    <NavBar />
+    <span>
+      Lorem ipsum
+    </span>
   )
 }
 
