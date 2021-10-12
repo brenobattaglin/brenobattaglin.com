@@ -1,9 +1,13 @@
 import type { NextPage } from 'next'
-import NavBar from './components/navbar'
+import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-    <NavBar />
+      <Image
+        src="/images/profile.png"
+        height={144}
+        width={144}
+        alt="Breno's profile photo" />
   )
 }
 
