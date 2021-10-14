@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const NavBar = () => {
     return (
-        <div className="container mx-auto w-full space-x-4 text-center">
+        <div className="container mx-auto w-screen space-x-4 text-center">
             <Link href='/' >
                 <a className="inline align-middle">Home</a>
             </Link>
