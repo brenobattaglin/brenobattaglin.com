@@ -11,11 +11,10 @@ const About: NextPage = () => {
         width={144}
         alt="Breno's profile photo"
       />
-      <div className="mt-4">
-        <p>
+      <div className="mt-16">
+        <p className="mb-4">
           I was born in the state of Espírito Santo, Brazil. When I was a child, I always loved games and tech.
         </p>
-        <br />
         <p>
           Growing up, I decided to do a technical programming course, and later, study computer science.
           At this time, my carrer begins as web developer.
