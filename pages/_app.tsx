@@ -11,8 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name='description' content='Personal website' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
-      <Component {...pageProps} />
+      <div className="bg-black text-white">
+        <NavBar />
+        <Component {...pageProps} />
+      </div>
     </>
   )
 }
