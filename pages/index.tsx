@@ -1,13 +1,13 @@
 import type { NextPage } from 'next'
-import Image from 'next/image'
 
 const Home: NextPage = () => {
   return (
-      <Image
-        src="/images/profile.png"
-        height={144}
-        width={144}
-        alt="Breno's profile photo" />
+    <div className="flex flex-col mx-auto min-h-screen max-w-sm justify-center items-center">
+        <p className="text-4xl mb-4">Breno Battaglin</p>
+        <p className="text-base">Computer Scientist</p>
+        <p className="text-base">Software Engineer</p>
+        <p className="text-base">Minimalist</p>
+    </div>
   )
 }
 
