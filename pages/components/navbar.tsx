@@ -7,7 +7,7 @@ const NavBar = () => {
                 <a className="inline align-middle">Home</a>
             </Link>
             <Link href='/about' >
-                <a className="inline align-middle">About me</a>
+                <a className="inline align-middle">About</a>
             </Link>
             <a href='mailto:breno.battaglin@icloud.com' className="inline align-middle">Contact</a>
             <Link href='/linktree'>
