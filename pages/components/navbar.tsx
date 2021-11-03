@@ -7,9 +7,8 @@ const NavBar = () => {
                 <a className="inline align-middle hover:text-blue-400">Home</a>
             </Link>
             <Link href='/about' >
-                <a className="inline align-middle hover:text-blue-400">About</a>
+                <a className="inline align-middle hover:text-blue-400">About me</a>
             </Link>
-            <a href='mailto:breno.battaglin@icloud.com' className="inline align-middle hover:text-blue-400">Contact</a>
             <Link href='/linktree'>
                 <a className="inline align-middle hover:text-blue-400">Linktree</a>
             </Link>
