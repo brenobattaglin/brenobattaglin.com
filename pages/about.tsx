@@ -1,9 +1,11 @@
+import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
 import Image from 'next/image'
-
+import contentVariants from './components/animationVariants/contentVariants'
 
 const About: NextPage = () => {
   return (
+    <motion.div initial="exit" animate="enter" exit="exit" variants={contentVariants} >
     <div className="flex flex-col mx-auto min-h-screen max-w-sm justify-center items-center">
       <Image
         src="/images/profile.png"
@@ -22,6 +24,7 @@ const About: NextPage = () => {
         </p>
       </div>
     </div>
+    </motion.div>
   )
 }
 
