@@ -1,17 +1,25 @@
 import Link from 'next/link';
 
+const links = [
+    { route: '/', label: 'Home' },
+    { route: '/about', label: 'About' },
+    { route: '/linktree', label: 'Linktree' },
+];
+
 const NavBar = () => {
     return (
         <div className="container mx-auto w-screen space-x-4 text-center pt-3">
-            <Link href='/' >
-                <a className="inline align-middle hover:text-nord8">Home</a>
-            </Link>
-            <Link href='/about' >
-                <a className="inline align-middle hover:text-nord8">About me</a>
-            </Link>
-            <Link href='/linktree'>
-                <a className="inline align-middle hover:text-nord8">Linktree</a>
-            </Link>
+            {
+                links.map(
+                    (link) => (
+                        <Link href={link.route}>
+                            <a className="inline align-middle font-light text-nord6 hover:text-nord8">
+                                {link.label}
+                            </a>
+                        </Link>
+                    )
+                )
+            }
         </div>
     );
 };
