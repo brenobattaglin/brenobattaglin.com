@@ -1,6 +1,7 @@
 import NavBar from "./navbar"
 import Head from "next/head"
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
+import Content from "./content"
 
 export default function Layout({ children }: { children: any }) {
     return (
@@ -12,13 +13,8 @@ export default function Layout({ children }: { children: any }) {
             </Head>
             <NavBar />
             <main>
-                <AnimatePresence >
-                    <div className="font-light overflow-hidden">
-                        {children}
-                    </div>
-                </AnimatePresence>
-            </main>
-
+                {children}
+            </main >
         </>
     )
 }

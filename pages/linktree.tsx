@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
-import { redirect } from 'next/dist/server/api-utils';
-import contentVariants from './components/animation/contentVariants'
 import linkVariants from './components/animation/linkVariants';
+import Content from './components/content';
 
 const links = [
   { id: 1, url: 'mailto:breno.battaglin@icloud.com', description: 'Email', mustOpenTab: false },
@@ -15,19 +14,17 @@ const links = [
 
 const Linktree: NextPage = () => {
   return (
-    <motion.div variants={contentVariants} initial="hidden" animate="visible" exit="exit">
-      <div className="flex flex-col mx-auto min-h-screen max-w-sm justify-center items-center space-y-4">
-        {
-          links.map(
-            (link) => (
-              <motion.a key={link.id} variants={linkVariants} whileHover="hover" whileTap="tap" >
-                <a className="block text-nord6 hover:text-nord8" target="_blank" href={link.url}>{link.description}</a>
-              </motion.a>
-            )
+    <Content>
+      {
+        links.map(
+          (link) => (
+            <motion.a key={link.id} variants={linkVariants} whileHover="hover" whileTap="tap"
+              className="block text-nord6 hover:text-nord8 my-2" target="_blank" href={link.url}>{link.description}
+            </motion.a>
           )
-        }
-      </div>
-    </motion.div >
+        )
+      }
+    </Content>
   )
 }
 

@@ -5,12 +5,7 @@ import contentVariants from './components/animation/contentVariants'
 
 const About: NextPage = () => {
   return (
-    <motion.div variants={contentVariants} initial="hidden" animate="visible" exit="exit">
-      <div className="flex flex-col mx-auto min-h-screen max-w-sm justify-center items-center">
-        <Image
-          src="/images/profile.png"
-          height={200}
-          width={200}
+    <Content>
           alt="Breno's profile photo"
         />
         <div className="mt-16 p-3 " >
@@ -23,8 +18,7 @@ const About: NextPage = () => {
             Today I have a bachelor in computer science and work as software engineer.
           </p>
         </div>
-      </div>
-    </motion.div>
+    </Content>
   )
 }
 
