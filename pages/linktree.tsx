@@ -5,12 +5,12 @@ import contentVariants from './components/animation/contentVariants'
 import linkVariants from './components/animation/linkVariants';
 
 const links = [
-  { url: 'mailto:breno.battaglin@icloud.com', description: 'Email', mustOpenTab: false },
-  { url: 'https://github.com/brenobattaglin', description: 'Github', mustOpenTab: true },
-  { url: 'https://instagram.com/brenobattaglin', description: 'Instagram', mustOpenTab: true },
-  { url: 'https://www.linkedin.com/in/brenobattaglin', description: 'LinkedIn', mustOpenTab: true },
-  { url: 'https://open.spotify.com/user/brenobattaglin', description: 'Spotify', mustOpenTab: true },
-  { url: 'https://twitter.com/brenobattaglin', description: 'Twitter', mustOpenTab: true },
+  { id: 1, url: 'mailto:breno.battaglin@icloud.com', description: 'Email', mustOpenTab: false },
+  { id: 2, url: 'https://github.com/brenobattaglin', description: 'Github', mustOpenTab: true },
+  { id: 3, url: 'https://instagram.com/brenobattaglin', description: 'Instagram', mustOpenTab: true },
+  { id: 4, url: 'https://www.linkedin.com/in/brenobattaglin', description: 'LinkedIn', mustOpenTab: true },
+  { id: 5, url: 'https://open.spotify.com/user/brenobattaglin', description: 'Spotify', mustOpenTab: true },
+  { id: 6, url: 'https://twitter.com/brenobattaglin', description: 'Twitter', mustOpenTab: true },
 ];
 
 const Linktree: NextPage = () => {
@@ -20,7 +20,7 @@ const Linktree: NextPage = () => {
         {
           links.map(
             (link) => (
-              <motion.a variants={linkVariants} whileHover="hover" whileTap="tap" >
+              <motion.a key={link.id} variants={linkVariants} whileHover="hover" whileTap="tap" >
                 <a className="block text-nord6 hover:text-nord8" target="_blank" href={link.url}>{link.description}</a>
               </motion.a>
             )

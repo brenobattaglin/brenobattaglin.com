@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 const links = [
-    { route: '/', label: 'Home' },
-    { route: '/about', label: 'About' },
-    { route: '/linktree', label: 'Linktree' },
+    { id: 1, route: '/', label: 'Home' },
+    { id: 2, route: '/about', label: 'About' },
+    { id: 3, route: '/linktree', label: 'Linktree' },
 ];
 
 const NavBar = () => {
@@ -12,7 +12,7 @@ const NavBar = () => {
             {
                 links.map(
                     (link) => (
-                        <Link href={link.route}>
+                        <Link href={link.route} key={link.id}>
                             <a className="inline align-middle font-light text-nord6 hover:text-nord8">
                                 {link.label}
                             </a>
