@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
-import linkVariants from './components/animation/linkVariants';
+import linktreeVariants from './components/animation/linktreeVariants';
 import Content from './components/content';
 
 const links = [
@@ -18,7 +18,7 @@ const Linktree: NextPage = () => {
       {
         links.map(
           (link) => (
-            <motion.a key={link.id} variants={linkVariants} whileHover="hover" whileTap="tap"
+            <motion.a key={link.id} variants={linktreeVariants} whileHover="hover" whileTap="tap"
               className="block text-nord6 hover:text-nord8 my-2" target="_blank" href={link.url}>{link.description}
             </motion.a>
           )

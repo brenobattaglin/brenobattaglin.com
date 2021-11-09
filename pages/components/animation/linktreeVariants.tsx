@@ -1,4 +1,4 @@
-const linkVariants = {
+const linktreeVariants = {
     hover: {
         y: -3,
     },
@@ -7,4 +7,4 @@ const linkVariants = {
     },
 };
 
-export default linkVariants;
+export default linktreeVariants;
