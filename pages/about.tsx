@@ -18,8 +18,9 @@ const About: NextPage = () => {
         src="/images/profile.png"
         height={200}
         width={200}
-        alt="Breno's profile photo" />
-      <div className="mt-16 mb-4 p-3 ">
+        alt="Breno's profile photo"
+      />
+      <div className="mt-4 p-3 ">
         {
           paragraphs.map(
             paragraph => (
