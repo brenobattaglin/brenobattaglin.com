@@ -3,14 +3,6 @@ const contentVariants = {
     y: 240,
     opacity: 0
   },
-  exit: {
-    x: -240,
-    opacity: 0,
-    transition: {
-      ease: "easeInOut",
-      duration: 3
-    }
-  },
   visible: {
     y: 0,
     opacity: 1,
