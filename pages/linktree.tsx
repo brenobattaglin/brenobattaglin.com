@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import type { NextPage } from 'next'
-import linktreeVariants from './components/animation/linktreeVariants';
+import linktreeVariants from '../src/animation/linktreeVariants';
 import Content from './components/content';
 
 const links = [
