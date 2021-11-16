@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React from "react";
 import contentVariants from "../../src/animation/contentVariants";
 
 export default function Content({ children }: { children: any }) {
