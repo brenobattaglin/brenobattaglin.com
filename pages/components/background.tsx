@@ -1,14 +1,12 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { OrbitControls, OrthographicCamera, TorusKnot } from '@react-three/drei'
+import { TorusKnot } from '@react-three/drei'
 
 const BackgroundAnimation = () => {
-    const mesh = useRef<THREE.Mesh>()
+    const mesh = useRef<THREE.Mesh>(null!)
 
     useFrame(() => {
-        if (mesh.current !== undefined) {
-            mesh.current.rotateY(0.01)
-        }
+        mesh.current.rotateY(0.005)
     });
 
     return (
