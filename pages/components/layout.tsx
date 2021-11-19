@@ -1,7 +1,7 @@
 import NavBar from "./navbar"
 import Head from "next/head"
-import { AnimatePresence, motion } from "framer-motion"
-import Content from "./content"
+import React from "react";
+import Background from "./background";
 
 export default function Layout({ children }: { children: any }) {
     return (
@@ -11,8 +11,9 @@ export default function Layout({ children }: { children: any }) {
                 <meta name='description' content='Personal website' />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <NavBar />
             <main>
+                <NavBar />
+                <Background />
                 {children}
             </main >
         </>
