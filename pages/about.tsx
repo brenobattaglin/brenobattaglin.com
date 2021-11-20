@@ -15,10 +15,11 @@ const About: NextPage = () => {
   return (
     <Content>
       <Image
-        src="/images/profile.png"
+        src="/images/profile.jpg"
         height={200}
         width={200}
         alt="Breno's profile photo"
+        className="rounded-full"
       />
       <div className="mt-4 p-3 ">
         {
