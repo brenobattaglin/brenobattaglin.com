@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: any }) {
                 <meta name='description' content='Personal website' />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main>
+            <main className="overflow-hidden">
                 <NavBar />
                 <Background />
                 {children}
