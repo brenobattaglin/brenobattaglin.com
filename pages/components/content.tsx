@@ -1,5 +1,19 @@
 import { AnimatePresence, motion } from "framer-motion";
-import contentVariants from "../../src/animation/contentVariants";
+
+const contentVariants = {
+    hidden: {
+        y: 240,
+        opacity: 0
+    },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            type: "spring",
+            duration: 2,
+        }
+    },
+};
 
 export default function Content({ children }: { children: any }) {
     return (
