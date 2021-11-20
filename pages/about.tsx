@@ -5,7 +5,7 @@ import Content from './components/content'
 const paragraphs = [
   { id: 1, text: 'I was born in the state of Espírito Santo, Brazil. When I was a child, I always loved games and tech.' },
   {
-    id: 2, text: 'Growing up, I decided to do a programming technical course, and later, study computer science.'
+    id: 2, text: 'Growing up, I decided to do a programming technical course and later, study computer science. '
       + 'At this time, my carrer begins as web developer. '
       + 'Today I have a bachelor in computer science and work as software engineer.',
   }
