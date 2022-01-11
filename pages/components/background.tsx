@@ -1,24 +1,24 @@
 import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Sphere, TorusKnot } from '@react-three/drei'
+import { TorusKnot } from '@react-three/drei'
 
 const BackgroundAnimation = () => {
     const mesh = useRef<THREE.Mesh>(null!)
 
     useFrame(() => {
-        mesh.current.rotateX(0.005)
+        mesh.current.rotateY(0.005)
     });
 
     return (
-        <Sphere
-            args={[10, 6, 32, 0, 1.6, 0, 6.28]}
+        <TorusKnot
+            args={[6, 2.3, 11, 3, 5, 11]}
             ref={mesh}
         >
             <meshBasicMaterial
                 color="#2e3440"
                 wireframe={true}
             />
-        </Sphere>
+        </TorusKnot>
     );
 }
 
