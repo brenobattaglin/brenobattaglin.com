@@ -25,10 +25,8 @@ const Home: NextPage = () => {
       ))}
       <div className="mt-4">
         {companies.map((company) => (
-          <span className="text-base text-nord6 mr-2">
-            <Link key={company.id} href={company.url}>
-              {company.text}
-            </Link>
+          <span key={company.id} className="text-base text-nord6 mr-2">
+            <Link href={company.url}>{company.text}</Link>
           </span>
         ))}
       </div>
