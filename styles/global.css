@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 html {
- background-color: theme('colors.nord0');
+  background-image: linear-gradient(
+    to bottom right,
+    theme("colors.nord0"),
+    theme("colors.nord0"),
+    theme("colors.nord2"),
+    theme("colors.nord3"),
+    theme("colors.nord0")
+  );
 }
