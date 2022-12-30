@@ -12,9 +12,9 @@
     "@react-three/drei": "^7.22.1",
     "@react-three/fiber": "^7.0.19",
     "framer-motion": "^5.2.0",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.21",
@@ -22,7 +22,7 @@
     "@types/three": "^0.134.0",
     "autoprefixer": "^10.3.7",
     "eslint": "8.0.0",
-    "eslint-config-next": "11.1.2",
+    "eslint-config-next": "^13.1.1",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.16",
     "three": "^0.134.0",
