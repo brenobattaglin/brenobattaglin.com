@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import type { NextPage } from "next";
-import Content from "./components/content";
+import Content from "../components/content";
 
 const links = [
   { id: 1, url: "https://github.com/brenobattaglin", description: "Github" },

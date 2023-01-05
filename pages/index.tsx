@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Content from "./components/content";
+import Content from "../components/content";
 
 const subtitles = [
   { id: 1, text: "Computer Scientist" },
