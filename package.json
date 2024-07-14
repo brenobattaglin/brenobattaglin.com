@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "lint": "next lint"
   },
   "dependencies": {
     "@react-three/drei": "^9.48.5",
@@ -24,7 +23,6 @@
     "autoprefixer": "^10.4.13",
     "eslint": "8.30.0",
     "eslint-config-next": "^13.1.1",
-    "husky": "^8.0.2",
     "postcss": "^8.4.31",
     "tailwindcss": "^2.2.16",
     "three": "^0.148.0",
