@@ -39,7 +39,7 @@ const Linktree: NextPage = () => {
           </motion.a>
         );
       })}
-          <BackLink/>
+      <BackLink />
     </Content>
   );
 };

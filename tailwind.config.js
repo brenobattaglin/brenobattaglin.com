@@ -19,7 +19,7 @@ module.exports = {
         nord12: '#d08770',
         nord13: '#ebcb8b',
         nord14: '#a3be8c',
-        nord15: '#b48ead'
+        nord15: '#b48ead',
       },
     },
   },
@@ -27,4 +27,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
