@@ -1,4 +1,3 @@
-import { Github } from 'lucide-react';
 import type { NextPage } from 'next';
 import Content from '../components/core/content';
 
