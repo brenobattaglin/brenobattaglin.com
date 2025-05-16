@@ -29,7 +29,7 @@ const BackgroundAnimation = () => {
       smoothness={6} // The number of curve segments. Default is 4
       ref={mesh}
     >
-      <meshBasicMaterial color="#2e3440" wireframe={true} />
+      <meshBasicMaterial color="#3b4252" wireframe={true} />
     </RoundedBox>
   );
 };
