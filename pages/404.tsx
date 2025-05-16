@@ -1,8 +1,8 @@
-import type { NextPage } from "next";
-import Content from "../components/content";
+import type { NextPage } from 'next';
+import Content from '../components/core/content';
 
-const error = "Error 404";
-const message = "This page could not be found.";
+const error = 'Error 404';
+const message = 'This page could not be found.';
 
 const NotFound: NextPage = () => {
   return (
