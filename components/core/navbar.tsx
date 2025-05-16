@@ -1,14 +1,13 @@
 import Link from "next/link";
 
 const links = [
-  { id: 1, route: "/", label: "Home" },
   { id: 2, route: "/about", label: "About" },
   { id: 3, route: "/linktree", label: "Linktree" },
 ];
 
 const NavBar = () => {
   return (
-    <div className="container mx-auto w-screen space-x-4 text-center pt-3">
+    <div className="container mx-auto  space-x-4 text-center pt-3 justify-center">
       {links.map((link) => (
         <Link
           href={link.route}
