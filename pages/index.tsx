@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Content from '../components/core/content';
-import NavBar from '../components/core/navbar';
+import NavBar from '../components/index/navbar';
 
 const name = 'Breno Battaglin';
 
