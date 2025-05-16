@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 html {
-  background-color: theme('colors.nord0');
+  background-color: theme('colors.black');
 }
