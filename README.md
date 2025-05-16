@@ -1,4 +1,3 @@
-
 <div align="center">
     <h1>brenobattaglin.com</h1>
     <h3>My personal website</h3>    

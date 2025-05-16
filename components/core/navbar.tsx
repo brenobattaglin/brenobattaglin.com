@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 const links = [
-  { id: 2, route: "/about", label: "About" },
-  { id: 3, route: "/linktree", label: "Linktree" },
+  { id: 2, route: '/about', label: 'About' },
+  { id: 3, route: '/linktree', label: 'Linktree' },
 ];
 
 const NavBar = () => {

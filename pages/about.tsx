@@ -34,7 +34,7 @@ const About: NextPage = () => {
           </p>
         ))}
       </div>
-      <BackLink/>
+      <BackLink />
     </Content>
   );
 };
