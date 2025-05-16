@@ -3,16 +3,16 @@ import Image from 'next/image';
 import Content from '../components/core/content';
 import BackLink from '../components/core/back-link';
 
-
 const paragraphs = [
   {
     id: 1,
-    text: 'Hi, I\'m Breno.'
+    text: "Hi, I'm Breno.",
   },
   {
     id: 2,
-    text: 'I\'m a Computer Scientist and Software Engineer, passionate about creating elegant and efficient solutions. ' +
-    'I\'m driven by challenges, commited to excellence, and dedicated to continuous learning.'
+    text:
+      "I'm a Computer Scientist and Software Engineer, passionate about creating elegant and efficient solutions. " +
+      "I'm driven by challenges, commited to excellence, and dedicated to continuous learning.",
   },
 ];
 
