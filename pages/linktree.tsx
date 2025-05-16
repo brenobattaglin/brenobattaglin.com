@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import type { NextPage } from 'next';
 import Content from '../components/core/content';
+import BackLink from '../components/core/back-link';
 
 const links = [
   { id: 1, url: 'https://github.com/brenobattaglin', description: 'Github' },
@@ -38,6 +39,7 @@ const Linktree: NextPage = () => {
           </motion.a>
         );
       })}
+          <BackLink/>
     </Content>
   );
 };

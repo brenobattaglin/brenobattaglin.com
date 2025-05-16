@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Content from '../components/core/content';
+import BackLink from '../components/core/back-link';
 
 const paragraphs = [
   {
@@ -33,6 +34,7 @@ const About: NextPage = () => {
           </p>
         ))}
       </div>
+      <BackLink/>
     </Content>
   );
 };
