@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Content from '../components/core/content';
+import NavBar from '../components/core/navbar';
 
 const name = 'Breno Battaglin';
 
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
           {subtitle.text}
         </p>
       ))}
+      <NavBar />
     </Content>
   );
 };
