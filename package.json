@@ -2,6 +2,10 @@
   "name": "brenobattaglin.com",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,7 +24,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
+    "@types/node": "^22.0.0",
     "@types/react": "18.0.26",
     "@types/three": "^0.147.0",
     "autoprefixer": "^10.4.13",
