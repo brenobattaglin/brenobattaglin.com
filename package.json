@@ -2,6 +2,10 @@
   "name": "brenobattaglin.com",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,25 +15,25 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
-    "@react-three/drei": "^9.48.5",
-    "@react-three/fiber": "^8.9.2",
-    "framer-motion": "^8.0.2",
-    "lucide-react": "^0.511.0",
-    "next": "^14.2.30",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@react-three/drei": "^10.6.1",
+    "@react-three/fiber": "^9.3.0",
+    "framer-motion": "^12.23.12",
+    "lucide-react": "^0.539.0",
+    "next": "^15.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@types/react": "18.0.26",
-    "@types/three": "^0.147.0",
+    "@types/node": "^24.2.1",
+    "@types/react": "^19.1.9",
+    "@types/three": "^0.179.0",
     "autoprefixer": "^10.4.13",
-    "eslint": "8.30.0",
-    "eslint-config-next": "^13.1.1",
+    "eslint": "^9.33.0",
+    "eslint-config-next": "^15.4.6",
     "postcss": "^8.4.31",
     "prettier": "^3.5.3",
-    "tailwindcss": "^2.2.16",
-    "three": "^0.148.0",
-    "typescript": "4.9.4"
+    "tailwindcss": "^3.4.15",
+    "three": "^0.179.0",
+    "typescript": "^5.9.2"
   }
 }
