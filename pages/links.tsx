@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import type { NextPage } from 'next';
 import Content from '../components/core/content';
 import BackLink from '../components/core/back-link';
