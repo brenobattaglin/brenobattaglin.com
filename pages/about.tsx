@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Content from '../components/core/content';
 import BackLink from '../components/core/back-link';
+import { EncryptedText } from '../components/ui/encrypted-text';
 
 const paragraphs = [
   {
@@ -27,9 +28,16 @@ const About: NextPage = () => {
         className="rounded-full"
       />
       <div className="mt-4 p-3 ">
-        {paragraphs.map((paragraph) => (
-          <p key={paragraph.id} className="mb-4 text-justify text-nord6">
-            {paragraph.text}
+        {paragraphs.map((paragraph, index) => (
+          <p 
+            key={paragraph.id} 
+            className="mb-4 text-justify"
+          >
+            {index === 0 ? (
+              <EncryptedText text={paragraph.text} />
+            ) : (
+              paragraph.text
+            )}
           </p>
         ))}
       </div>
