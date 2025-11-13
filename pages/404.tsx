@@ -8,8 +8,8 @@ const message = 'This page could not be found.';
 const NotFound: NextPage = () => {
   return (
     <Content>
-      <p className="text-base mb-4 text-nord11"><EncryptedText text={error} /></p>
-      <p className="text-base mb-4 text-nord6"><EncryptedText text={message} /></p>
+      <p className="text-base mb-4 text-red-800"><EncryptedText text={error} /></p>
+      <p className="text-base mb-4"><EncryptedText text={message} /></p>
     </Content>
   );
 };

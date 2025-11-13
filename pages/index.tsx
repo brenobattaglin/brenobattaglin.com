@@ -8,7 +8,7 @@ const name = 'Breno Battaglin';
 const Home: NextPage = () => {
   return (
     <Content>
-      <p className="text-4xl mb-4 text-nord6">
+      <p className="text-4xl mb-4">
         <EncryptedText text={name}/>
       </p>
       <NavBar />

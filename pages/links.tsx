@@ -33,7 +33,7 @@ const Linktree: NextPage = () => {
             variants={linktreeAnimationVariants}
             whileHover="hover"
             whileTap="tap"
-            className="block text-nord6 hover:text-nord8 my-2"
+            className="block my-2"
             href={link.url}
           >
             <EncryptedText text={link.description} />

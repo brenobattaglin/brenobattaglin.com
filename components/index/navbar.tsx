@@ -13,7 +13,7 @@ const NavBar = () => {
         <Link
           href={link.route}
           key={link.id}
-          className="inline align-middle font-light text-nord6 hover:text-nord8"
+          className="inline align-middle font-light"
         >
           <EncryptedText text={link.label} />
         </Link>

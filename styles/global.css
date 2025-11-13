@@ -5,3 +5,7 @@
 html {
   background-color: theme('colors.black');
 }
+
+body {
+  color: theme('colors.white');
+}
