@@ -1,7 +1,8 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import type { NextPage } from 'next';
 import Content from '../components/core/content';
 import BackLink from '../components/core/back-link';
+import { EncryptedText } from '@/components/ui/encrypted-text';
 
 const links = [
   { id: 1, url: 'https://github.com/brenobattaglin', description: 'Github' },
@@ -32,10 +33,10 @@ const Linktree: NextPage = () => {
             variants={linktreeAnimationVariants}
             whileHover="hover"
             whileTap="tap"
-            className="block text-nord6 hover:text-nord8 my-2"
+            className="block my-2"
             href={link.url}
           >
-            {link.description}
+            <EncryptedText text={link.description} />
           </motion.a>
         );
       })}
