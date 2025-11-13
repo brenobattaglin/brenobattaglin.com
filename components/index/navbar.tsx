@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { EncryptedText } from '../ui/encrypted-text';
 
 const links = [
   { id: 2, route: '/about', label: 'About' },
@@ -14,7 +15,7 @@ const NavBar = () => {
           key={link.id}
           className="inline align-middle font-light text-nord6 hover:text-nord8"
         >
-          {link.label}
+          <EncryptedText text={link.label} />
         </Link>
       ))}
     </div>
