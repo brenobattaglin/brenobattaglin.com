@@ -1,11 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 html {
-  background-color: theme('colors.black');
+  background-color: black;
 }
 
 body {
-  color: theme('colors.white');
+  color: white;
 }
