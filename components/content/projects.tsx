@@ -80,13 +80,12 @@ const cards = projects.map((project, index) => ({
   thumbnail: project.thumbnail
 }));
 
-
 export default function ProjectsSection() {
   return (
     <section className="snap-start h-screen flex items-center justify-center">
       <div className="h-full w-full py-10">
-        <div className="mb-8 px-10 text-left">
-          <h2 className="mb-2 text-4xl font-bold">{sectionTitle}</h2>
+        <div className="px-10 text-left">
+          <h2>{sectionTitle}</h2>
           <p className="text-sm text-neutral-400">{sectionSubtitle}</p>
         </div>
         <LayoutGrid cards={cards} />
