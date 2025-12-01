@@ -1,11 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 html {
-  background-color: theme('colors.black');
+  background-color: black;
 }
 
 body {
-  color: theme('colors.white');
+  color: white;
+}
+
+@layer base {
+  h2 {
+    @apply text-4xl font-bold mb-2;
+  }
 }

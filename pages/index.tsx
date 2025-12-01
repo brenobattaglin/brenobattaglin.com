@@ -1,37 +1,48 @@
-import Link from 'next/link';
-import Content from '../components/core/content';
-import { EncryptedText } from '@/components/ui/encrypted-text';
+import IntroSection from '@/components/content/intro';
+import ContactSection from '@/components/content/contact';
+import ProjectsSection from '@/components/content/projects';
+import { FloatingDock } from '@/components/ui/floating-dock';
+import { ScrollArea } from '@/components/ui/scroll-area';
+import UserIcon from '@/components/icons/user';
+import BriefcaseIcon from '@/components/icons/briefcase';
+import MessageIcon from '@/components/icons/message';
 
-function NavBar() {
-  const links = [
-    { id: 2, route: '/about', label: 'About' },
-    { id: 3, route: '/links', label: 'Links' },
+export default function Home() {
+  const dockItems = [
+    {
+      title: 'Go to Top',
+      icon: <UserIcon />,
+      href: '#intro',
+    },
+    {
+      title: 'Projects',
+      icon: <BriefcaseIcon />,
+      href: '#projects',
+    },
+    {
+      title: 'Contact Me',
+      icon: <MessageIcon />,
+      href: '#contact',
+    },
+
   ];
 
   return (
-    <div className="container mx-auto  space-x-4 text-center pt-3 justify-center">
-      {links.map((link) => (
-        <Link
-          href={link.route}
-          key={link.id}
-          className="inline align-middle font-light"
-        >
-          <EncryptedText text={link.label} />
-        </Link>
-      ))}
-    </div>
-  );
-}
+    <ScrollArea className="h-screen snap-y snap-mandatory">
+      <div id="intro" className="snap-start snap-always">
+        <IntroSection />
+      </div>
+      <div id="projects" className="snap-start snap-always">
+        <ProjectsSection />
+      </div>
+      <div id="contact" className="snap-start snap-always">
+        <ContactSection />
+      </div>
+   
 
-export default function Home() {
-  const name = 'Breno Battaglin';
-
-  return (
-    <Content>
-      <p className="text-4xl mb-4">
-        <EncryptedText text={name} />
-      </p>
-      <NavBar />
-    </Content>
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
+        <FloatingDock items={dockItems} />
+      </div>
+    </ScrollArea>
   );
 }
