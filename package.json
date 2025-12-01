@@ -2,7 +2,7 @@
   "name": "brenobattaglin.com",
   "private": true,
   "engines": {
-    "node": ">=25.0.0",
+    "node": ">=24.0.0",
     "npm": ">=11.0.0"
   },
   "scripts": {
