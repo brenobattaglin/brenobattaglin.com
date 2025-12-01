@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
   MotionValue,
@@ -10,6 +9,7 @@ import {
 } from "motion/react";
 
 import { useRef, useState } from "react";
+import MenuMeatballIcon from "@/components/icons/menu-meatball";
 
 export const FloatingDock = ({
   items,
@@ -77,7 +77,9 @@ const FloatingDockMobile = ({
         onClick={() => setOpen(!open)}
         className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-black"
       >
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
+        <div className="w-5 h-5 text-gray-500 dark:text-gray-400">
+          <MenuMeatballIcon  />
+        </div>
       </button>
     </div>
   );
