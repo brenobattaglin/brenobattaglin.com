@@ -9,6 +9,10 @@ body {
 }
 
 @layer base {
+  a {
+    @apply text-white underline;
+  }
+
   body {
     @apply font-light
   }
