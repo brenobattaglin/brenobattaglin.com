@@ -9,7 +9,19 @@ body {
 }
 
 @layer base {
+  body {
+    @apply font-light
+  }
+
   h2 {
-    @apply text-4xl font-bold mb-2;
+    @apply text-4xl mb-2;
+  }
+
+  p {
+    @apply text-sm text-gray-400; 
+  }
+
+  section {
+    @apply snap-start h-screen flex items-center justify-center;
   }
 }
