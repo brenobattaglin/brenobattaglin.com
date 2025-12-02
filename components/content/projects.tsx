@@ -29,7 +29,7 @@ const projects: Project[] = [
       { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=de.bmw.connected.mobile20.na&hl=en-US' }
     ],
     thumbnail: '/images/bmw.jpg',
-    className: 'md:col-span-2'
+    className: 'sd:col-span-1 md:col-span-2'
   },
   {
     title: 'MINI',
@@ -38,7 +38,7 @@ const projects: Project[] = [
       { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=de.mini.connected.mobile20.row&hl=en-US' }
     ],
     thumbnail: '/images/mini.jpg',
-    className: 'md:col-span-1'
+    className: 'sd:col-span-1'
   },
   {
     title: 'Zallpy',
@@ -82,13 +82,15 @@ const cards = projects.map((project, index) => ({
 
 export default function ProjectsSection() {
   return (
-    <section className="snap-start h-screen flex items-center justify-center">
-      <div className="h-full w-full py-10">
-        <div className="px-10 text-left">
+    <section className="snap-start h-screen flex items-center justify-center overflow-hidden">
+      <div className="h-full w-full max-h-screen py-10 flex flex-col">
+        <div className="px-10 text-left shrink-0">
           <h2>{sectionTitle}</h2>
           <p className="text-sm text-neutral-400">{sectionSubtitle}</p>
         </div>
-        <LayoutGrid cards={cards} />
+        <div className="flex-1 min-h-0">
+          <LayoutGrid cards={cards} />
+        </div>
       </div>
     </section>
   );
