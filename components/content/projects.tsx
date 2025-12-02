@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { LayoutGrid } from '@/components/ui/layout-grid';
+import { EncryptedText } from '../ui/encrypted-text';
 
 interface ProjectLink {
   label: string;
@@ -38,13 +39,13 @@ const projects: Project[] = [
       { label: 'Google Play', url: 'https://play.google.com/store/apps/details?id=de.mini.connected.mobile20.row&hl=en-US' }
     ],
     thumbnail: '/images/mini.jpg',
-    className: 'sd:col-span-1'
+    className: 'col-span-1'
   },
   {
     title: 'Zallpy',
     links: [{ label: 'Website', url: 'https://www.zallpy.com/' }],
     thumbnail: '/images/zallpy.jpg',
-        className: 'md:col-span-2'
+        className: 'sd:col-span-1 md:col-span-2'
 
   },
   {
@@ -57,13 +58,12 @@ const projects: Project[] = [
 
 const ProjectCard = ({ title, links }: ProjectCardProps) => (
   <div>
-    <p className="font-bold text-xl text-white md:text-4xl">
-      {title}
-    </p>
-    <p className="my-4 max-w-lg text-base font-normal text-neutral-200">
+    <h2 >{title}
+    </h2>
+    <p >
       {links.map((link, index) => (
         <span key={`${link.url}-${index}`}>
-          <Link href={link.url} className="text-white underline">
+          <Link href={link.url}>
             {link.label}
           </Link>
           {index < links.length - 1 && ', '}
@@ -82,11 +82,15 @@ const cards = projects.map((project, index) => ({
 
 export default function ProjectsSection() {
   return (
-    <section className="snap-start h-screen flex items-center justify-center overflow-hidden">
+    <section>
       <div className="h-full w-full max-h-screen py-10 flex flex-col">
         <div className="px-10 text-left shrink-0">
-          <h2>{sectionTitle}</h2>
-          <p className="text-sm text-neutral-400">{sectionSubtitle}</p>
+          <h2>
+            <EncryptedText text={sectionTitle} />
+          </h2>
+          <p>
+            <EncryptedText text={sectionSubtitle} />
+          </p>
         </div>
         <div className="flex-1 min-h-0">
           <LayoutGrid cards={cards} />
