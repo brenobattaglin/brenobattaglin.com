@@ -28,7 +28,6 @@ export default function ContactSection() {
   return (
     <section className="snap-start h-screen flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
-     
         <Image
           src="/images/profile.jpg"
           height={200}
@@ -36,7 +35,7 @@ export default function ContactSection() {
           className="rounded-full mb-8"
           alt="Profile"
         />
-           <div className="text-center mb-8">
+        <div className="text-center mb-8">
           <h2>{sectionTitle}</h2>
           <p className="text-sm text-gray-400">{sectionSubtitle}</p>
         </div>

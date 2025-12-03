@@ -24,7 +24,6 @@ export default function Home() {
       icon: <MessageIcon />,
       href: '#contact',
     },
-
   ];
 
   return (
@@ -38,7 +37,6 @@ export default function Home() {
       <div id="contact" className="snap-start snap-always">
         <ContactSection />
       </div>
-   
 
       <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50">
         <FloatingDock items={dockItems} />
