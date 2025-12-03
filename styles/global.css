@@ -14,7 +14,7 @@ body {
   }
 
   body {
-    @apply font-light
+    @apply font-light;
   }
 
   h2 {
@@ -22,7 +22,7 @@ body {
   }
 
   p {
-    @apply text-sm text-gray-400; 
+    @apply text-sm text-gray-400;
   }
 
   section {
