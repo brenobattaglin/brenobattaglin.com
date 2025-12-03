@@ -94,12 +94,8 @@ export default function ProjectsSection() {
     <section>
       <div className="h-full w-full max-h-screen py-10 flex flex-col">
         <div className="px-10 text-left shrink-0">
-          <h2>
-            <EncryptedText text={sectionTitle} />
-          </h2>
-          <p>
-            <EncryptedText text={sectionSubtitle} />
-          </p>
+          <h2>{sectionTitle}</h2>
+          <p>{sectionSubtitle}</p>
         </div>
         <div className="flex-1 min-h-0">
           <LayoutGrid cards={cards} />
