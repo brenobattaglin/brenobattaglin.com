@@ -5,12 +5,14 @@ export default function IntroSection() {
   const subtitle = 'Software Engineer';
 
   return (
-    <section className="snap-start h-screen flex items-center justify-center">
+    <section>
       <div className="text-center">
-        <p className="text-4xl mb-2 text-white">
+        <h2>
           <EncryptedText text={title} />
+        </h2>
+        <p>
+          <EncryptedText text={subtitle} />
         </p>
-        <p className="text-sm text-gray-400">{subtitle}</p>
       </div>
     </section>
   );

@@ -30,23 +30,27 @@ export default function ContactSection() {
       <div className="flex flex-col items-center justify-center">
         <Image
           src="/images/profile.jpg"
-          height={200}
-          width={200}
+          height={150}
+          width={150}
           className="rounded-full mb-8"
           alt="Profile"
         />
         <div className="text-center mb-8">
-          <h2>{sectionTitle}</h2>
-          <p className="text-sm text-gray-400">{sectionSubtitle}</p>
+          <h2>
+            <EncryptedText text={sectionTitle} />
+          </h2>
+          <p>
+            <EncryptedText text={sectionSubtitle} />
+          </p>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           {links.map((link) => (
             <motion.a
               key={link.id}
               variants={linktreeAnimationVariants}
               whileHover="hover"
               whileTap="tap"
-              className="block my-2"
+              className="block my-2 no-underline"
               href={link.url}
             >
               <EncryptedText text={link.description} />
