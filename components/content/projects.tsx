@@ -52,14 +52,13 @@ const projects: Project[] = [
       },
     ],
     thumbnail: '/images/mini.jpg',
-    className: 'col-span-1'
+    className: 'col-span-1',
   },
   {
     title: 'Zallpy',
     links: [{ label: 'Website', url: 'https://www.zallpy.com/' }],
     thumbnail: '/images/zallpy.jpg',
-        className: 'sd:col-span-1 md:col-span-2'
-
+    className: 'sd:col-span-1 md:col-span-2',
   },
   {
     title: 'MinhaEntrada',
@@ -71,14 +70,11 @@ const projects: Project[] = [
 
 const ProjectCard = ({ title, links }: ProjectCardProps) => (
   <div>
-    <h2 >{title}
-    </h2>
-    <p >
+    <h2>{title}</h2>
+    <p>
       {links.map((link, index) => (
         <span key={`${link.url}-${index}`}>
-          <Link href={link.url}>
-            {link.label}
-          </Link>
+          <Link href={link.url}>{link.label}</Link>
           {index < links.length - 1 && ', '}
         </span>
       ))}
