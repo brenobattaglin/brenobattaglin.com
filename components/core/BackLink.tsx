@@ -1,5 +1,6 @@
+'use client';
 import Link from 'next/link';
-import { EncryptedText } from '../ui/encrypted-text';
+import { EncryptedText } from '../ui/EncryptedText';
 
 const BackLink = () => {
   return (
