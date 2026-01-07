@@ -1,6 +1,7 @@
+'use client';
 import Link from 'next/link';
-import { LayoutGrid } from '@/components/ui/layout-grid';
-import { EncryptedText } from '../ui/encrypted-text';
+import { LayoutGrid } from '@/components/ui/LayoutGrid';
+import { EncryptedText } from '../ui/EncryptedText';
 
 interface ProjectLink {
   label: string;

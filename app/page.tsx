@@ -1,13 +1,13 @@
-import IntroSection from '@/components/content/intro';
-import ContactSection from '@/components/content/contact';
-import ProjectsSection from '@/components/content/projects';
-import { FloatingDock } from '@/components/ui/floating-dock';
-import { ScrollArea } from '@/components/ui/scroll-area';
-import UserIcon from '@/components/icons/user';
-import BriefcaseIcon from '@/components/icons/briefcase';
-import MessageIcon from '@/components/icons/message';
+import IntroSection from '@/components/content/Intro';
+import ContactSection from '@/components/content/Contact';
+import ProjectsSection from '@/components/content/Projects';
+import { FloatingDock } from '@/components/ui/FloatingDock';
+import { ScrollArea } from '@/components/ui/ScrollArea';
+import UserIcon from '@/components/icons/User';
+import BriefcaseIcon from '@/components/icons/Briefcase';
+import MessageIcon from '@/components/icons/Message';
 
-export default function Home() {
+export default function HomePage() {
   const dockItems = [
     {
       title: 'Go to Top',

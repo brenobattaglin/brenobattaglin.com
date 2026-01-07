@@ -1,4 +1,5 @@
-import { EncryptedText } from '@/components/ui/encrypted-text';
+'use client';
+import { EncryptedText } from '@/components/ui/EncryptedText';
 
 export default function IntroSection() {
   const title = 'Breno Battaglin';

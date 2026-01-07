@@ -1,6 +1,7 @@
+'use client';
 import Image from 'next/image';
 import { motion } from 'motion/react';
-import { EncryptedText } from '@/components/ui/encrypted-text';
+import { EncryptedText } from '@/components/ui/EncryptedText';
 
 const sectionTitle = 'Contact Me';
 const sectionSubtitle = 'Find me here.';

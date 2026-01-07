@@ -1,3 +1,4 @@
+'use client';
 import { cn } from '@/lib/utils';
 import {
   AnimatePresence,
@@ -9,7 +10,7 @@ import {
 } from 'motion/react';
 
 import { useRef, useState } from 'react';
-import MenuMeatballIcon from '@/components/icons/menu-meatball';
+import MenuMeatballIcon from '@/components/icons/MenuMeatball';
 
 export const FloatingDock = ({
   items,
