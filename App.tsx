@@ -14,7 +14,9 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className={`min-h-screen bg-black text-white selection:bg-white selection:text-black transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
+    <div
+      className={`min-h-screen bg-black text-white selection:bg-white selection:text-black transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+    >
       <Header />
       <main className="relative z-10">
         <Hero />
