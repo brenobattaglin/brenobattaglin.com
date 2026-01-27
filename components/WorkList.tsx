@@ -43,7 +43,7 @@ export const WorkList: React.FC = () => {
             Scroll to explore
           </span>
         </div>
-        <p className="font-mono text-sm md:text-base text-neutral-400 max-w-2xl">
+        <p className="font-mono text-sm  text-neutral-400 max-w-2xl">
           Some projects and companies that I have and had the honor of working with.
         </p>
       </div>
