@@ -17,16 +17,17 @@ export const useIntersectionObserver = (
       }
     }, options);
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
+    const currentElement = elementRef.current;
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
-  }, [options.threshold, options.root, options.rootMargin]);
+  }, [options]);
 
   return { elementRef, isVisible };
 };
