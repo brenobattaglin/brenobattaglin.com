@@ -1,5 +1,7 @@
 import React from 'react';
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import { BriefcaseIcon } from './icons/BriefcaseIcon';
+import { MailIcon } from './icons/MailIcon';
 
 const ANIMATION_CLASSES = {
   fadeInUp: (isVisible: boolean) =>
@@ -9,6 +11,7 @@ const ANIMATION_CLASSES = {
 } as const;
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/brenobattaglin';
+const EMAIL_ADDRESS = 'contato@breno.simplelogin.com';
 
 const AmbientBackground: React.FC = () => (
   <div className="absolute inset-0 pointer-events-none">
@@ -31,35 +34,33 @@ const ProfileAvatar: React.FC<{ isVisible: boolean }> = ({ isVisible }) => (
   </div>
 );
 
-const ArrowIcon: React.FC = () => (
-  <svg
-    className="relative z-10 w-4 h-4 text-cyan-500 transform group-hover:translate-x-1 transition-transform duration-300"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M17 8l4 4m0 0l-4 4m4-4H3"
-    />
-  </svg>
-);
-
 const LinkedInButton: React.FC = () => (
   <a
     href={LINKEDIN_URL}
     target="_blank"
     rel="noopener noreferrer"
-    className="group relative inline-flex items-center gap-3 px-8 py-4 font-mono text-sm uppercase tracking-widest overflow-hidden"
+    className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 font-mono text-sm uppercase tracking-widest overflow-hidden min-w-[280px]"
   >
     <div className="absolute inset-0 bg-linear-to-r from-cyan-500/10 to-blue-500/10 rounded-full border border-gray-500/30 group-hover:border-cyan-500/60 transition-all duration-300" />
     <div className="absolute inset-0 bg-linear-to-r from-cyan-500/0 via-cyan-500/10 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
     <span className="relative z-10 text-white group-hover:text-cyan-300 transition-colors duration-300">
       Connect on LinkedIn
     </span>
-    <ArrowIcon />
+    <BriefcaseIcon className="relative z-10 w-4 h-4 text-cyan-500 transform group-hover:translate-x-1 transition-transform duration-300" />
+  </a>
+);
+
+const EmailButton: React.FC = () => (
+  <a
+    href={`mailto:${EMAIL_ADDRESS}`}
+    className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 font-mono text-sm uppercase tracking-widest overflow-hidden min-w-[280px]"
+  >
+    <div className="absolute inset-0 bg-linear-to-r from-cyan-500/10 to-blue-500/10 rounded-full border border-gray-500/30 group-hover:border-cyan-500/60 transition-all duration-300" />
+    <div className="absolute inset-0 bg-linear-to-r from-cyan-500/0 via-cyan-500/10 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
+    <span className="relative z-10 text-white group-hover:text-cyan-300 transition-colors duration-300">
+      Send Message
+    </span>
+    <MailIcon className="relative z-10 w-4 h-4 text-cyan-500 transform group-hover:translate-x-1 transition-transform duration-300" />
   </a>
 );
 
@@ -88,7 +89,10 @@ export const Contact: React.FC = () => {
           opportunities to be part of your vision.
         </p>
 
-        <LinkedInButton />
+        <div className="flex flex-col gap-4">
+          <EmailButton />
+          <LinkedInButton />
+        </div>
       </div>
     </section>
   );
