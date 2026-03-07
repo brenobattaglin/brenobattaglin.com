@@ -80,7 +80,7 @@ export const Contact: React.FC = () => {
       >
         <ProfileAvatar isVisible={isVisible} />
 
-        <h2 className="font-sans font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-6 text-transparent bg-clip-text bg-linear-to-b from-white to-white/70">
+        <h2 className="font-sans font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-6 text-white">
           Contact Me
         </h2>
 
