@@ -49,17 +49,16 @@ const CircularGraphic: React.FC<{ isVisible: boolean }> = ({ isVisible }) => (
       <div className="w-32 h-32 md:w-48 md:h-48 border border-white/10 rounded-full flex items-center justify-center">
         <div className="w-1 h-1 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
       </div>
-      <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80" />
     </div>
   </div>
 );
 
 const ScrollIndicator: React.FC = () => (
-  <div className="absolute bottom-8 flex flex-col items-center gap-2 mix-blend-difference">
+  <div className="absolute bottom-8 flex flex-col items-center gap-2">
     <span className="font-mono text-[10px] tracking-widest uppercase opacity-60">
       Scroll
     </span>
-    <div className="w-px h-12 bg-linear-to-b from-cyan-300 to-transparent opacity-50" />
+    <div className="w-px h-12 bg-cyan-300 opacity-50" />
   </div>
 );
 
@@ -83,7 +82,7 @@ export const Hero: React.FC = () => {
       <div
         className={`relative z-10 flex flex-col items-center ${ANIMATION_CLASSES.fadeInUp(isVisible)}`}
       >
-        <h1 className="font-serif text-[12vw] md:text-[10vw] lg:text-[8vw] xl:text-[140px] 2xl:text-[180px] max-w-[1400px] leading-[0.9] text-center tracking-tighter mix-blend-screen text-transparent bg-clip-text bg-linear-to-b from-white to-white/70">
+        <h1 className="font-serif text-[12vw] md:text-[10vw] lg:text-[8vw] xl:text-[140px] 2xl:text-[180px] max-w-[1400px] leading-[0.9] text-center tracking-tighter mix-blend-screen text-white">
           BRENO
           <br />
           BATTAGLIN

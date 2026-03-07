@@ -18,7 +18,7 @@ const NavLink: React.FC<NavLinkProps> = ({ label, href }) => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const headerOffset = 80; // Offset for fixed header
+      const headerOffset = 80;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition =
         elementPosition + window.pageYOffset - headerOffset;
@@ -38,7 +38,7 @@ const NavLink: React.FC<NavLinkProps> = ({ label, href }) => {
         className="relative group cursor-pointer"
       >
         {label}
-        <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full" />
+        <span className="absolute -bottom-1 left-0 w-0 h-px bg-white transition-all duration-300 group-hover:w-full" />
       </a>
     </li>
   );
