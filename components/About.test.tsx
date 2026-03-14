@@ -32,11 +32,6 @@ describe('Hero and InfoPill components', () => {
     expect(getByText(/Scroll/i)).toBeInTheDocument();
   });
 
-  it('should render the professional narrative', () => {
-    const { getByText } = render(<Hero />);
-    expect(getByText(/passionate about building high-quality software/i)).toBeInTheDocument();
-  });
-
   it('should render InfoPill with right alignment and animation', () => {
     const { getByText, container } = render(
       <InfoPill

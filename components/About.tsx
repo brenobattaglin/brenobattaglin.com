@@ -88,16 +88,11 @@ export const Hero: React.FC = () => {
           BATTAGLIN
         </h1>
 
-        <div className="mt-8 md:mt-12 overflow-hidden flex flex-col items-center gap-4">
+        <div className="mt-8 md:mt-12 overflow-hidden">
           <p
             className={`font-mono text-sm md:text-base lg:text-lg tracking-[0.2em] uppercase text-neutral-400 ${ANIMATION_CLASSES.slideUp(isVisible)}`}
           >
             Software Engineer
-          </p>
-          <p className="max-w-[600px] text-center text-neutral-500 text-sm md:text-base leading-relaxed">
-            Passionate about building high-quality software that combines
-            technical excellence with elegant user experiences. Specializing in
-            modern web technologies and architectural design.
           </p>
         </div>
       </div>

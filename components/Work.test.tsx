@@ -39,9 +39,10 @@ describe('WorkList and WorkItem components', () => {
     );
   });
 
-  it('should render project years', () => {
-    const { getByText } = render(<WorkList />);
-    expect(getByText('2023 - Present')).toBeInTheDocument();
-    expect(getByText('2021 - 2023')).toBeInTheDocument();
+  it('should render project descriptions', () => {
+    const { getByText, getAllByText } = render(<WorkList />);
+    expect(getAllByText(/Solutions Architect/i).length).toBe(2);
+    expect(getByText(/Mobile Specialist/i)).toBeInTheDocument();
+    expect(getByText(/Android Developer/i)).toBeInTheDocument();
   });
 });

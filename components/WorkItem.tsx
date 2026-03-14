@@ -5,7 +5,6 @@ interface Project {
   id: string;
   title: string;
   description: string;
-  year: string;
   link: string;
 }
 
@@ -27,15 +26,13 @@ const ProjectTitle: React.FC<{ title: string }> = ({ title }) => (
   </h3>
 );
 
-const ProjectDescription: React.FC<{ description: string; year: string }> = ({
+const ProjectDescription: React.FC<{ description: string }> = ({
   description,
-  year,
 }) => (
   <div className="flex flex-col md:items-end gap-2 font-mono text-xs md:text-sm uppercase tracking-widest text-neutral-400">
     <span className="text-white transition-colors duration-300">
       {description}
     </span>
-    <span className="text-neutral-500">{year}</span>
   </div>
 );
 
@@ -54,10 +51,7 @@ export const WorkItem: React.FC<WorkItemProps> = ({ project }) => {
     >
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row md:items-baseline justify-between gap-6 md:gap-0">
         <ProjectTitle title={project.title} />
-        <ProjectDescription
-          description={project.description}
-          year={project.year}
-        />
+        <ProjectDescription description={project.description} />
       </div>
     </div>
   );

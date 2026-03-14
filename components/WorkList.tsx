@@ -7,28 +7,24 @@ const PROJECTS = [
     id: '01',
     title: 'MY BMW',
     description: 'Senior Software Engineer, Solutions Architect',
-    year: '2023 - Present',
     link: 'https://www.bmw.com',
   },
   {
     id: '02',
     title: 'MINI',
     description: 'Senior Software Engineer, Solutions Architect',
-    year: '2021 - 2023',
     link: 'https://www.mini.com',
   },
   {
     id: '03',
     title: 'ZALLPY',
     description: 'Senior Software Engineer, Mobile Specialist',
-    year: '2019 - 2021',
     link: 'https://www.zallpy.com',
   },
   {
     id: '04',
     title: 'MINHA ENTRADA',
     description: 'Android Developer',
-    year: '2017 - 2019',
     link: 'https://minhaentrada.com.br',
   },
 ];
