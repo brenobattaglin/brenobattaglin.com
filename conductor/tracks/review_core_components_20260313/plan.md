@@ -18,8 +18,8 @@
 
 - [x] Task: Write failing tests for About component [4b61f85]
 - [x] Task: Implement/Enhance About component [4b61f85]
-- [ ] Task: Write failing tests for WorkList and WorkItem components
-- [ ] Task: Implement/Enhance WorkList and WorkItem components
+- [x] Task: Write failing tests for WorkList and WorkItem components [1a1f44d]
+- [x] Task: Implement/Enhance WorkList and WorkItem components [1a1f44d]
 - [ ] Task: Write failing tests for Contact component
 - [ ] Task: Implement/Enhance Contact component
 - [ ] Task: Conductor - User Manual Verification 'Review and Enhance Content Sections' (Protocol in workflow.md)
