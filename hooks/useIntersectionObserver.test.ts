@@ -7,7 +7,7 @@ describe('useIntersectionObserver', () => {
     let callback: (entries: unknown[]) => void = () => {};
     const unobserve = vi.fn();
     const observe = vi.fn();
-    
+
     // Mock IntersectionObserver as a class
     class MockObserver {
       observe = observe;
@@ -17,13 +17,16 @@ describe('useIntersectionObserver', () => {
         callback = cb;
       }
     }
-    
+
     vi.stubGlobal('IntersectionObserver', MockObserver);
 
-    const { result, unmount, rerender } = renderHook(({ options }) => useIntersectionObserver(options), {
-      initialProps: { options: { threshold: 0.1 } }
-    });
-    
+    const { result, unmount, rerender } = renderHook(
+      ({ options }) => useIntersectionObserver(options),
+      {
+        initialProps: { options: { threshold: 0.1 } },
+      },
+    );
+
     // Create a dummy element and assign it to the ref
     const div = document.createElement('div');
     // manually assigning ref for testing purposes
