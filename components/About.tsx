@@ -45,7 +45,7 @@ const CircularGraphic: React.FC<{ isVisible: boolean }> = ({ isVisible }) => (
     className={`absolute bottom-[15vh] ${ANIMATION_CLASSES.fadeInScale(isVisible)}`}
   >
     <div className="relative w-48 h-48 md:w-64 md:h-64 border border-white/5 rounded-full flex items-center justify-center">
-      <div className="absolute inset-0 border border-cyan-500/20 rounded-full animate-spin-slow" />
+      <div className="absolute inset-0 border border-white/10 rounded-full animate-spin-slow" />
       <div className="w-32 h-32 md:w-48 md:h-48 border border-white/10 rounded-full flex items-center justify-center">
         <div className="w-1 h-1 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
       </div>
@@ -58,13 +58,13 @@ const ScrollIndicator: React.FC = () => (
     <span className="font-mono text-[10px] tracking-widest uppercase opacity-60">
       Scroll
     </span>
-    <div className="w-px h-12 bg-cyan-300 opacity-50" />
+    <div className="w-px h-12 bg-white/30" />
   </div>
 );
 
 const AmbientLight: React.FC = () => (
   <div className="absolute inset-0 pointer-events-none">
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[120px] animate-pulse-slow" />
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] animate-pulse-slow" />
   </div>
 );
 
@@ -88,11 +88,16 @@ export const Hero: React.FC = () => {
           BATTAGLIN
         </h1>
 
-        <div className="mt-8 md:mt-12 overflow-hidden">
+        <div className="mt-8 md:mt-12 overflow-hidden flex flex-col items-center gap-4">
           <p
             className={`font-mono text-sm md:text-base lg:text-lg tracking-[0.2em] uppercase text-neutral-400 ${ANIMATION_CLASSES.slideUp(isVisible)}`}
           >
             Software Engineer
+          </p>
+          <p className="max-w-[600px] text-center text-neutral-500 text-sm md:text-base leading-relaxed">
+            Passionate about building high-quality software that combines
+            technical excellence with elegant user experiences. Specializing in
+            modern web technologies and architectural design.
           </p>
         </div>
       </div>
@@ -104,7 +109,7 @@ export const Hero: React.FC = () => {
         <InfoPill
           label="Location"
           value="Brazil"
-          indicatorColor="bg-cyan-300"
+          indicatorColor="bg-neutral-400"
         />
       </div>
     </section>
