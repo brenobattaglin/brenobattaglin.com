@@ -14,3 +14,4 @@
 
 - **Linting:** ESLint - Enforces code quality and catches potential errors.
 - **Formatting:** Prettier - Ensures consistent code formatting across the project.
+- **Testing:** Vitest & React Testing Library - Framework for unit and component testing, ensuring high code quality and reliability.

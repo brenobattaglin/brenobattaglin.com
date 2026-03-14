@@ -15,15 +15,15 @@ const EMAIL_ADDRESS = 'contato@breno.simplelogin.com';
 
 const AmbientBackground: React.FC = () => (
   <div className="absolute inset-0 pointer-events-none">
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-cyan-600/5 rounded-full blur-[100px]" />
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px]" />
   </div>
 );
 
 const ProfileAvatar: React.FC<{ isVisible: boolean }> = ({ isVisible }) => (
   <div className={`mb-8 ${ANIMATION_CLASSES.fadeInScale(isVisible)}`}>
     <div className="relative group">
-      <div className="absolute inset-0 rounded-full bg-linear-to-br from-gray-500/20 to-cyan-500/20 blur-md group-hover:blur-lg transition-all duration-500" />
-      <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-cyan-500/30 transition-all duration-500">
+      <div className="absolute inset-0 rounded-full bg-linear-to-br from-neutral-500/10 to-white/10 blur-md group-hover:blur-lg transition-all duration-500" />
+      <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-white/30 transition-all duration-500">
         <img
           src="/images/profile.jpg"
           alt="Breno Battaglin profile photo"
@@ -41,12 +41,12 @@ const LinkedInButton: React.FC = () => (
     rel="noopener noreferrer"
     className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 font-mono text-sm uppercase tracking-widest overflow-hidden min-w-[280px]"
   >
-    <div className="absolute inset-0 bg-linear-to-r from-cyan-500/10 to-blue-500/10 rounded-full border border-gray-500/30 group-hover:border-cyan-500/60 transition-all duration-300" />
-    <div className="absolute inset-0 bg-linear-to-r from-cyan-500/0 via-cyan-500/10 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
-    <span className="relative z-10 text-white group-hover:text-cyan-300 transition-colors duration-300">
+    <div className="absolute inset-0 bg-white/5 rounded-full border border-white/10 group-hover:border-white/30 transition-all duration-300" />
+    <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
+    <span className="relative z-10 text-white group-hover:text-neutral-200 transition-colors duration-300">
       Connect on LinkedIn
     </span>
-    <BriefcaseIcon className="relative z-10 w-4 h-4 text-cyan-500 transform group-hover:translate-x-1 transition-transform duration-300" />
+    <BriefcaseIcon className="relative z-10 w-4 h-4 text-white/50 transform group-hover:translate-x-1 transition-transform duration-300" />
   </a>
 );
 
@@ -55,12 +55,12 @@ const EmailButton: React.FC = () => (
     href={`mailto:${EMAIL_ADDRESS}`}
     className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 font-mono text-sm uppercase tracking-widest overflow-hidden min-w-[280px]"
   >
-    <div className="absolute inset-0 bg-linear-to-r from-cyan-500/10 to-blue-500/10 rounded-full border border-gray-500/30 group-hover:border-cyan-500/60 transition-all duration-300" />
-    <div className="absolute inset-0 bg-linear-to-r from-cyan-500/0 via-cyan-500/10 to-cyan-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
-    <span className="relative z-10 text-white group-hover:text-cyan-300 transition-colors duration-300">
+    <div className="absolute inset-0 bg-white/5 rounded-full border border-white/10 group-hover:border-white/30 transition-all duration-300" />
+    <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/5 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
+    <span className="relative z-10 text-white group-hover:text-neutral-200 transition-colors duration-300">
       Send Message
     </span>
-    <MailIcon className="relative z-10 w-4 h-4 text-cyan-500 transform group-hover:translate-x-1 transition-transform duration-300" />
+    <MailIcon className="relative z-10 w-4 h-4 text-white/50 transform group-hover:translate-x-1 transition-transform duration-300" />
   </a>
 );
 
@@ -79,6 +79,13 @@ export const Contact: React.FC = () => {
         className={`relative z-10 flex flex-col items-center max-w-2xl ${ANIMATION_CLASSES.fadeInUp(isVisible)}`}
       >
         <ProfileAvatar isVisible={isVisible} />
+
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-2 h-2 rounded-full bg-neutral-400 animate-pulse" />
+          <span className="font-mono text-[10px] text-neutral-400 uppercase tracking-widest">
+            Available for new projects
+          </span>
+        </div>
 
         <h2 className="font-sans font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-6 text-white">
           Contact Me

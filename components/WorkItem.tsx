@@ -21,7 +21,7 @@ const ANIMATION_CLASSES = {
 };
 
 const ProjectTitle: React.FC<{ title: string }> = ({ title }) => (
-  <h3 className="font-sans font-bold text-5xl md:text-7xl lg:text-8xl xl:text-[120px] 2xl:text-[140px] tracking-tighter text-white transition-all duration-500 group-hover:pl-4 group-hover:text-cyan-100">
+  <h3 className="font-sans font-bold text-5xl md:text-7xl lg:text-8xl xl:text-[120px] 2xl:text-[140px] tracking-tighter text-white transition-all duration-500 group-hover:pl-4">
     {title}
   </h3>
 );
@@ -29,8 +29,8 @@ const ProjectTitle: React.FC<{ title: string }> = ({ title }) => (
 const ProjectDescription: React.FC<{ description: string }> = ({
   description,
 }) => (
-  <div className="flex items-center gap-4 md:gap-8 font-mono text-xs md:text-sm uppercase tracking-widest text-neutral-400">
-    <span className="text-white group-hover:text-cyan-400 transition-colors duration-300">
+  <div className="flex flex-col md:items-end gap-2 font-mono text-xs md:text-sm uppercase tracking-widest text-neutral-400">
+    <span className="text-white transition-colors duration-300">
       {description}
     </span>
   </div>
