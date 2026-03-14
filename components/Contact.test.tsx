@@ -19,14 +19,20 @@ describe('Contact component', () => {
   it('should render the LinkedIn button with correct URL', () => {
     const { getByText } = render(<Contact />);
     const link = getByText('Connect on LinkedIn').closest('a');
-    expect(link).toHaveAttribute('href', 'https://www.linkedin.com/in/brenobattaglin');
+    expect(link).toHaveAttribute(
+      'href',
+      'https://www.linkedin.com/in/brenobattaglin',
+    );
     expect(link).toHaveAttribute('target', '_blank');
   });
 
   it('should render the Email button with correct mailto link', () => {
     const { getByText } = render(<Contact />);
     const link = getByText('Send Message').closest('a');
-    expect(link).toHaveAttribute('href', 'mailto:contato@breno.simplelogin.com');
+    expect(link).toHaveAttribute(
+      'href',
+      'mailto:contato@breno.simplelogin.com',
+    );
   });
 
   it('should render the profile image', () => {

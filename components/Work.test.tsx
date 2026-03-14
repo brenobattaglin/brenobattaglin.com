@@ -29,13 +29,13 @@ describe('WorkList and WorkItem components', () => {
     window.open = vi.fn();
     const { getByText } = render(<WorkList />);
     const bmwProject = getByText('MY BMW');
-    
+
     fireEvent.click(bmwProject.closest('div[ref]') || bmwProject);
-    
+
     expect(window.open).toHaveBeenCalledWith(
       'https://www.bmw.com',
       '_blank',
-      'noopener,noreferrer'
+      'noopener,noreferrer',
     );
   });
 

@@ -40,15 +40,15 @@ describe('Hero and InfoPill components', () => {
         indicatorColor="bg-red-500"
         align="right"
         animated={true}
-      />
+      />,
     );
     expect(getByText('Test')).toBeInTheDocument();
     expect(getByText('Value')).toBeInTheDocument();
-    
+
     // Check for right alignment class
     const pillContainer = container.firstChild as HTMLElement;
     expect(pillContainer).toHaveClass('items-end');
-    
+
     // Check for animation class on the indicator
     const indicator = pillContainer.querySelector('.bg-red-500');
     expect(indicator).toHaveClass('animate-pulse');
