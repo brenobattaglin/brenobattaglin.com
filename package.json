@@ -9,7 +9,10 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md,html}\"",
     "format:check": "prettier --check .",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "react": "^19.2.4",

@@ -9,6 +9,18 @@ export default defineConfig({
     setupFiles: './setupTests.ts',
     coverage: {
       provider: 'v8',
+      include: [
+        'components/**/*.{ts,tsx}',
+        'hooks/**/*.{ts,tsx}',
+        'App.tsx',
+        'index.tsx',
+      ],
+      exclude: [
+        'node_modules/**',
+        'dist/**',
+        '**/*.test.{ts,tsx}',
+        'setupTests.ts',
+      ],
       reporter: ['text', 'json', 'html'],
       thresholds: {
         lines: 90,
