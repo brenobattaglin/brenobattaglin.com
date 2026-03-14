@@ -14,17 +14,25 @@ describe('Footer component', () => {
     const githubLink = getByText('Github').closest('a');
     const linkedinLink = getByText('LinkedIn').closest('a');
 
-    expect(githubLink).toHaveAttribute('href', 'https://github.com/brenobattaglin');
+    expect(githubLink).toHaveAttribute(
+      'href',
+      'https://github.com/brenobattaglin',
+    );
     expect(githubLink).toHaveAttribute('target', '_blank');
     expect(githubLink).toHaveAttribute('rel', 'noopener noreferrer');
 
-    expect(linkedinLink).toHaveAttribute('href', 'https://www.linkedin.com/in/brenobattaglin');
+    expect(linkedinLink).toHaveAttribute(
+      'href',
+      'https://www.linkedin.com/in/brenobattaglin',
+    );
     expect(linkedinLink).toHaveAttribute('target', '_blank');
     expect(linkedinLink).toHaveAttribute('rel', 'noopener noreferrer');
   });
 
   it('should render the copyright text', () => {
     const { getByText } = render(<Footer />);
-    expect(getByText(/Breno Battaglin\. All rights reserved\./i)).toBeInTheDocument();
+    expect(
+      getByText(/Breno Battaglin\. All rights reserved\./i),
+    ).toBeInTheDocument();
   });
 });

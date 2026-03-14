@@ -14,7 +14,10 @@ describe('Header component', () => {
     const { getByText } = render(<Header />);
     expect(getByText('About').closest('a')).toHaveAttribute('href', '#about');
     expect(getByText('Works').closest('a')).toHaveAttribute('href', '#works');
-    expect(getByText('Contact').closest('a')).toHaveAttribute('href', '#contact');
+    expect(getByText('Contact').closest('a')).toHaveAttribute(
+      'href',
+      '#contact',
+    );
   });
 
   it('should call window.scrollTo when a navigation link is clicked', () => {
