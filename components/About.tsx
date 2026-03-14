@@ -18,7 +18,7 @@ const ANIMATION_CLASSES = {
     `transition-transform duration-1000 delay-500 transform ${isVisible ? 'translate-y-0' : 'translate-y-full'}`,
 } as const;
 
-const InfoPill: React.FC<InfoPillProps> = ({
+export const InfoPill: React.FC<InfoPillProps> = ({
   label,
   value,
   indicatorColor,

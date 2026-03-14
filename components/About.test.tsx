@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render } from '@testing-library/react';
-import { Hero } from './About';
+import { Hero, InfoPill } from './About';
 
 // Mock useIntersectionObserver
 vi.mock('../hooks/useIntersectionObserver', () => ({
@@ -10,7 +10,7 @@ vi.mock('../hooks/useIntersectionObserver', () => ({
   })),
 }));
 
-describe('Hero component', () => {
+describe('Hero and InfoPill components', () => {
   it('should render the name "BRENO BATTAGLIN"', () => {
     const { getByText } = render(<Hero />);
     expect(getByText(/BRENO/)).toBeInTheDocument();
@@ -35,5 +35,27 @@ describe('Hero component', () => {
   it('should render the professional narrative', () => {
     const { getByText } = render(<Hero />);
     expect(getByText(/passionate about building high-quality software/i)).toBeInTheDocument();
+  });
+
+  it('should render InfoPill with right alignment and animation', () => {
+    const { getByText, container } = render(
+      <InfoPill
+        label="Test"
+        value="Value"
+        indicatorColor="bg-red-500"
+        align="right"
+        animated={true}
+      />
+    );
+    expect(getByText('Test')).toBeInTheDocument();
+    expect(getByText('Value')).toBeInTheDocument();
+    
+    // Check for right alignment class
+    const pillContainer = container.firstChild as HTMLElement;
+    expect(pillContainer).toHaveClass('items-end');
+    
+    // Check for animation class on the indicator
+    const indicator = pillContainer.querySelector('.bg-red-500');
+    expect(indicator).toHaveClass('animate-pulse');
   });
 });
