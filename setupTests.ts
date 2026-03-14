@@ -1,7 +1,6 @@
 import '@testing-library/jest-dom';
 import { vi } from 'vitest';
 
-// Global mock for IntersectionObserver
 class IntersectionObserver {
   observe = vi.fn();
   unobserve = vi.fn();
@@ -14,7 +13,6 @@ Object.defineProperty(window, 'IntersectionObserver', {
   value: IntersectionObserver,
 });
 
-// Mock getBoundingClientRect
 Element.prototype.getBoundingClientRect = vi.fn(() => ({
   width: 120,
   height: 120,

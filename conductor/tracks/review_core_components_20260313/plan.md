@@ -25,4 +25,5 @@
 - [x] Task: Conductor - User Manual Verification 'Review and Enhance Content Sections' [checkpoint: 6374aa5]
 
 ## Phase: Review Fixes
+
 - [x] Task: Apply review suggestions [bf59b5b]
