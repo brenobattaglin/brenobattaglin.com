@@ -10,12 +10,12 @@
 - [x] Task: Verify `package.json` contains the new dependencies. 0a1f65d
 - [x] Task: Conductor - User Manual Verification 'Dependency Setup' (Protocol in workflow.md)
 
-## Phase 3: Integration (TDD)
+## Phase 3: Integration (TDD) [checkpoint: fed00d0]
 - [x] Task: Write failing tests in `__tests__/cdn-check.test.tsx` to verify that Google Fonts CDN links are *not* present in the document.
 - [x] Task: Implement: Remove all `<link>` and `<preconnect>` tags related to Google Fonts from `index.html`.
 - [x] Task: Implement: Add `@fontsource` imports to `index.css` for all required fonts and weights.
 - [x] Task: Verify that the newly written tests pass. 61f79da
-- [~] Task: Conductor - User Manual Verification 'Integration (TDD)' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Integration (TDD)' (Protocol in workflow.md)
 
 ## Phase 4: Final Cleanup & Verification
 - [ ] Task: Perform a final audit of the codebase for any remaining `unpkg`, `cdnjs`, or `jsdelivr` links.
