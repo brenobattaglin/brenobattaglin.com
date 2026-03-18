@@ -14,7 +14,7 @@
 
 ## Phase 3: Integration (TDD) [checkpoint: fed00d0]
 
-- [x] Task: Write failing tests in `__tests__/cdn-check.test.tsx` to verify that Google Fonts CDN links are _not_ present in the document.
+- [x] Task: Write failing tests in `__tests__/cdn-check.test.tsx` to verify that Google Fonts CDN links are _not* present in the document.
 - [x] Task: Implement: Remove all `<link>` and `<preconnect>` tags related to Google Fonts from `index.html`.
 - [x] Task: Implement: Add `@fontsource` imports to `index.css` for all required fonts and weights.
 - [x] Task: Verify that the newly written tests pass. 61f79da
@@ -26,3 +26,6 @@
 - [x] Task: Manually verify the visual appearance of the fonts (Inter, Italiana, JetBrains Mono) across the site.
 - [x] Task: Verify that the browser Network tab shows zero external requests to CDN domains on initial load.
 - [x] Task: Conductor - User Manual Verification 'Final Cleanup & Verification' (Protocol in workflow.md)
+
+## Phase: Review Fixes
+- [x] Task: Apply review suggestions 672ffe8
