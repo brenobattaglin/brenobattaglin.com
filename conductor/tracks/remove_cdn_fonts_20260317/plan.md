@@ -5,10 +5,10 @@
 - [x] Task: Audit `index.html` and `index.css` to confirm all current CDN dependencies.
 - [x] Task: Conductor - User Manual Verification 'Preparation' (Protocol in workflow.md)
 
-## Phase 2: Dependency Setup [checkpoint: c538e47]
+## Phase 2: Dependency Setup
 - [x] Task: Install `@fontsource/inter`, `@fontsource/italiana`, and `@fontsource/jetbrains-mono`.
 - [x] Task: Verify `package.json` contains the new dependencies. 0a1f65d
-- [x] Task: Conductor - User Manual Verification 'Dependency Setup' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'Dependency Setup' (Protocol in workflow.md)
 
 ## Phase 3: Integration (TDD)
 - [ ] Task: Write failing tests in `__tests__/cdn-check.test.tsx` to verify that Google Fonts CDN links are *not* present in the document.
