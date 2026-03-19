@@ -7,10 +7,10 @@
 - [x] Task: Implement: Remove Google Font links and preconnect tags from `index.html`. 1cbd7e9
 - [x] Task: Conductor - User Manual Verification 'Phase 1: Local Font Migration' (Protocol in workflow.md)
 
-## Phase 2: External Resource Audit and Localization
+## Phase 2: External Resource Audit and Localization [checkpoint: 761935d]
 - [x] Task: Audit all component files for any remaining CDN-hosted scripts or styles (e.g., unpkg, cdnjs, jsdelivr). 5a61614
 - [x] Task: Implement: Replace any identified CDN-hosted libraries with local files in `public/` or as npm packages. 5a61614
-- [~] Task: Conductor - User Manual Verification 'Phase 2: External Resource Audit and Localization' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Phase 2: External Resource Audit and Localization' (Protocol in workflow.md)
 
 ## Phase 3: Build Optimization and Final Verification
 - [ ] Task: Configure Vite to inline small assets in `vite.config.ts`.
