@@ -9,6 +9,7 @@
 ## Styling & UI
 
 - **Styling:** Tailwind CSS 4 - Utility-first CSS framework for rapid and consistent UI development.
+- **Font Hosting:** Local Hosting - Fonts (Italiana, JetBrains Mono, Inter) are hosted locally in `public/fonts/` to improve privacy, performance, and reliability.
 
 ## Tooling & Quality Assurance
 
