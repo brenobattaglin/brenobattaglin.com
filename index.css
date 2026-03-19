@@ -8,8 +8,9 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/italiana-regular.woff2') format('woff2'),
-       url('/fonts/italiana-regular.ttf') format('truetype');
+  src:
+    url('/fonts/italiana-regular.woff2') format('woff2'),
+    url('/fonts/italiana-regular.ttf') format('truetype');
 }
 
 /* JetBrains Mono */
@@ -18,64 +19,72 @@
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: url('/fonts/jetbrains-mono-100.woff2') format('woff2'),
-       url('/fonts/jetbrains-mono-100.ttf') format('truetype');
+  src:
+    url('/fonts/jetbrains-mono-100.woff2') format('woff2'),
+    url('/fonts/jetbrains-mono-100.ttf') format('truetype');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url('/fonts/jetbrains-mono-200.woff2') format('woff2'),
-       url('/fonts/jetbrains-mono-200.ttf') format('truetype');
+  src:
+    url('/fonts/jetbrains-mono-200.woff2') format('woff2'),
+    url('/fonts/jetbrains-mono-200.ttf') format('truetype');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/jetbrains-mono-300.woff2') format('woff2'),
-       url('/fonts/jetbrains-mono-300.ttf') format('truetype');
+  src:
+    url('/fonts/jetbrains-mono-300.woff2') format('woff2'),
+    url('/fonts/jetbrains-mono-300.ttf') format('truetype');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/jetbrains-mono-400.woff2') format('woff2'),
-       url('/fonts/jetbrains-mono-400.ttf') format('truetype');
+  src:
+    url('/fonts/jetbrains-mono-400.woff2') format('woff2'),
+    url('/fonts/jetbrains-mono-400.ttf') format('truetype');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/jetbrains-mono-500.woff2') format('woff2'),
-       url('/fonts/jetbrains-mono-500.ttf') format('truetype');
+  src:
+    url('/fonts/jetbrains-mono-500.woff2') format('woff2'),
+    url('/fonts/jetbrains-mono-500.ttf') format('truetype');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('/fonts/jetbrains-mono-600.woff2') format('woff2'),
-       url('/fonts/jetbrains-mono-600.ttf') format('truetype');
+  src:
+    url('/fonts/jetbrains-mono-600.woff2') format('woff2'),
+    url('/fonts/jetbrains-mono-600.ttf') format('truetype');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('/fonts/jetbrains-mono-700.woff2') format('woff2'),
-       url('/fonts/jetbrains-mono-700.ttf') format('truetype');
+  src:
+    url('/fonts/jetbrains-mono-700.woff2') format('woff2'),
+    url('/fonts/jetbrains-mono-700.ttf') format('truetype');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url('/fonts/jetbrains-mono-800.woff2') format('woff2'),
-       url('/fonts/jetbrains-mono-800.ttf') format('truetype');
+  src:
+    url('/fonts/jetbrains-mono-800.woff2') format('woff2'),
+    url('/fonts/jetbrains-mono-800.ttf') format('truetype');
 }
 
 /* Inter */
@@ -84,24 +93,27 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/inter-300.woff2') format('woff2'),
-       url('/fonts/inter-300.ttf') format('truetype');
+  src:
+    url('/fonts/inter-300.woff2') format('woff2'),
+    url('/fonts/inter-300.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/inter-400.woff2') format('woff2'),
-       url('/fonts/inter-400.ttf') format('truetype');
+  src:
+    url('/fonts/inter-400.woff2') format('woff2'),
+    url('/fonts/inter-400.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url('/fonts/inter-500.woff2') format('woff2'),
-       url('/fonts/inter-500.ttf') format('truetype');
+  src:
+    url('/fonts/inter-500.woff2') format('woff2'),
+    url('/fonts/inter-500.ttf') format('truetype');
 }
 
 @theme {
