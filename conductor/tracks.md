@@ -14,5 +14,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [~] **Track: now let's work on the removal of cdns. Proceed with a local approach for this. For instance, in case there is a font used via cdn, download it to get rid of the cdn, then apply where it should be.**
+- [x] **Track: now let's work on the removal of cdns. Proceed with a local approach for this. For instance, in case there is a font used via cdn, download it to get rid of the cdn, then apply where it should be.**
 *Link: [./tracks/localize_cdn_assets_20260317/](./tracks/localize_cdn_assets_20260317/)*
