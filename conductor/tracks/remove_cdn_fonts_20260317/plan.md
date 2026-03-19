@@ -17,8 +17,8 @@
 - [x] Task: Verify that the newly written tests pass. 61f79da
 - [x] Task: Conductor - User Manual Verification 'Integration (TDD)' (Protocol in workflow.md)
 
-## Phase 4: Final Cleanup & Verification [checkpoint: 9965052]
+## Phase 4: Final Cleanup & Verification
 - [x] Task: Perform a final audit of the codebase for any remaining `unpkg`, `cdnjs`, or `jsdelivr` links.
 - [x] Task: Manually verify the visual appearance of the fonts (Inter, Italiana, JetBrains Mono) across the site.
 - [x] Task: Verify that the browser Network tab shows zero external requests to CDN domains on initial load.
-- [x] Task: Conductor - User Manual Verification 'Final Cleanup & Verification' (Protocol in workflow.md)
+- [~] Task: Conductor - User Manual Verification 'Final Cleanup & Verification' (Protocol in workflow.md)
