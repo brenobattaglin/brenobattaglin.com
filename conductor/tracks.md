@@ -11,8 +11,3 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 - [ ] **Track: removal of all the CDNs on this project. Also, remember that you're currently on the master branch and we use trunk-based strategy. So create a dev branch from the master to work on this**
 *Link: [./tracks/remove_cdn_fonts_20260317/](./tracks/remove_cdn_fonts_20260317/)*
-
----
-
-- [x] **Track: now let's work on the removal of cdns. Proceed with a local approach for this. For instance, in case there is a font used via cdn, download it to get rid of the cdn, then apply where it should be.**
-*Link: [./tracks/localize_cdn_assets_20260317/](./tracks/localize_cdn_assets_20260317/)*
