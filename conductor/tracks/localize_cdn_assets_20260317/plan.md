@@ -1,11 +1,11 @@
 # Implementation Plan: Remove CDN Dependencies
 
 ## Phase 1: Local Font Migration
-- [ ] Task: Audit `index.html` and `index.css` for Google Font references.
-- [ ] Task: Implement: Download "Italiana", "JetBrains Mono", and "Inter" (WOFF2, WOFF, TTF) to `public/fonts/`.
-- [ ] Task: Implement: Update `index.css` with `@font-face` rules for all font families and weights.
-- [ ] Task: Implement: Remove Google Font links and preconnect tags from `index.html`.
-- [ ] Task: Conductor - User Manual Verification 'Phase 1: Local Font Migration' (Protocol in workflow.md)
+- [x] Task: Audit `index.html` and `index.css` for Google Font references. 1cbd7e9
+- [x] Task: Implement: Download "Italiana", "JetBrains Mono", and "Inter" (WOFF2, WOFF, TTF) to `public/fonts/`. 1cbd7e9
+- [x] Task: Implement: Update `index.css` with `@font-face` rules for all font families and weights. 1cbd7e9
+- [x] Task: Implement: Remove Google Font links and preconnect tags from `index.html`. 1cbd7e9
+- [~] Task: Conductor - User Manual Verification 'Phase 1: Local Font Migration' (Protocol in workflow.md)
 
 ## Phase 2: External Resource Audit and Localization
 - [ ] Task: Audit all component files for any remaining CDN-hosted scripts or styles (e.g., unpkg, cdnjs, jsdelivr).
