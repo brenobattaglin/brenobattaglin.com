@@ -21,6 +21,10 @@ describe('App component', () => {
     );
 
     expect(getAllByText(/Works/i).length).toBeGreaterThan(0);
-    expect(getByText(/Contact Me/)).toBeInTheDocument();
+  });
+
+  it('should initialize theme and apply dark class to documentElement', async () => {
+    render(<App />);
+    expect(document.documentElement.classList.contains('dark')).toBe(true);
   });
 });

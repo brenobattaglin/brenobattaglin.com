@@ -4,9 +4,11 @@ import { Hero } from './components/About';
 import { WorkList } from './components/WorkList';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { useTheme } from './hooks/useTheme';
 
 const App: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  useTheme();
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 100);
@@ -15,7 +17,7 @@ const App: React.FC = () => {
 
   return (
     <div
-      className={`min-h-screen bg-black text-white selection:bg-white selection:text-black transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
+      className={`min-h-screen bg-white text-black dark:bg-black dark:text-white selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-opacity duration-1000 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
     >
       <Header />
       <main className="relative z-10">
