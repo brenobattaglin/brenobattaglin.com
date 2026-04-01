@@ -3,26 +3,6 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { useTheme } from './useTheme';
 
 describe('useTheme', () => {
-  const localStorageMock = (() => {
-    let store: Record<string, string> = {};
-    return {
-      getItem: (key: string) => store[key] || null,
-      setItem: (key: string, value: string) => {
-        store[key] = value.toString();
-      },
-      clear: () => {
-        store = {};
-      },
-      removeItem: (key: string) => {
-        delete store[key];
-      },
-    };
-  })();
-
-  Object.defineProperty(window, 'localStorage', {
-    value: localStorageMock,
-  });
-
   beforeEach(() => {
     localStorage.clear();
     vi.clearAllMocks();
