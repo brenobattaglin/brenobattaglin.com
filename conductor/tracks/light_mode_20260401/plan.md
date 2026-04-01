@@ -1,8 +1,8 @@
 # Implementation Plan: Light Mode
 
 ## Phase 1: Foundation (Theme Context & Storage)
-- [ ] Task: Create `hooks/useTheme.ts` to manage the theme state and persist it to `localStorage`.
-- [ ] Task: Create `hooks/useTheme.test.ts` to verify theme state management and persistence.
+- [x] Task: Create `hooks/useTheme.ts` to manage the theme state and persist it to `localStorage`. 72cd004
+- [x] Task: Create `hooks/useTheme.test.ts` to verify theme state management and persistence. 72cd004
 - [ ] Task: Update `App.tsx` to handle the global theme class on the document root or a top-level wrapper.
 - [ ] Task: Conductor - User Manual Verification 'Foundation (Theme Context & Storage)' (Protocol in workflow.md)
 
