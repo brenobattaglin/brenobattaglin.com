@@ -116,6 +116,22 @@
     url('/fonts/inter-500.ttf') format('truetype');
 }
 
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --selection-bg: #000000;
+    --selection-text: #ffffff;
+  }
+
+  .dark {
+    --background: #000000;
+    --foreground: #ffffff;
+    --selection-bg: #ffffff;
+    --selection-text: #000000;
+  }
+}
+
 @theme {
   --font-serif: 'Italiana', serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -127,12 +143,22 @@
 
   --animate-spin-slow: spin 12s linear infinite;
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  --color-app-bg: var(--background);
+  --color-app-text: var(--foreground);
+  --color-app-selection-bg: var(--selection-bg);
+  --color-app-selection-text: var(--selection-text);
 }
 
 body {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--background);
+  color: var(--foreground);
   overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
 }
 
 ::-webkit-scrollbar {
@@ -140,7 +166,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
