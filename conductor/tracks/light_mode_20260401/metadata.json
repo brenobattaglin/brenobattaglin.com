@@ -1,0 +1,8 @@
+{
+  "track_id": "light_mode_20260401",
+  "type": "feature",
+  "status": "new",
+  "created_at": "2026-04-01T10:00:00Z",
+  "updated_at": "2026-04-01T10:00:00Z",
+  "description": "light mode. Idea is having an icon to toggle light and dark mode, saving the user's choice on client side for the next time he/she enters the page again."
+}
