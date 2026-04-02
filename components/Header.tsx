@@ -38,7 +38,7 @@ const NavLink: React.FC<NavLinkProps> = ({ label, href }) => {
         className="relative group cursor-pointer"
       >
         {label}
-        <span className="absolute -bottom-1 left-0 w-0 h-px bg-white transition-all duration-300 group-hover:w-full" />
+        <span className="absolute -bottom-1 left-0 w-0 h-px bg-app-text transition-all duration-300 group-hover:w-full" />
       </a>
     </li>
   );
@@ -46,7 +46,7 @@ const NavLink: React.FC<NavLinkProps> = ({ label, href }) => {
 
 export const Header: React.FC = () => {
   return (
-    <header className="fixed top-0 left-0 w-full px-6 py-6 md:px-12 md:py-8 flex justify-center items-center z-40 mix-blend-difference text-white">
+    <header className="fixed top-0 left-0 w-full px-6 py-6 md:px-12 md:py-8 flex justify-center items-center z-40 dark:mix-blend-difference text-app-text">
       <nav>
         <ul className="flex space-x-8 font-mono text-xs md:text-sm tracking-widest uppercase">
           {NAV_ITEMS.map((item) => (

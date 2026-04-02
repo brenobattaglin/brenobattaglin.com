@@ -15,13 +15,13 @@ interface WorkItemProps {
 
 const ANIMATION_CLASSES = {
   container: (isVisible: boolean) =>
-    `group relative border-b border-neutral-900 transition-all duration-700 ease-out py-16 md:py-24 cursor-pointer hover:bg-neutral-900/30 ${
+    `group relative border-b border-app-text/10 transition-all duration-700 ease-out py-16 md:py-24 cursor-pointer hover:bg-app-text/5 ${
       isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
     }`,
 };
 
 const ProjectTitle: React.FC<{ title: string }> = ({ title }) => (
-  <h3 className="font-sans font-bold text-5xl md:text-7xl lg:text-8xl xl:text-[120px] 2xl:text-[140px] tracking-tighter text-white transition-all duration-500 group-hover:pl-4">
+  <h3 className="font-sans font-bold text-5xl md:text-7xl lg:text-8xl xl:text-[120px] 2xl:text-[140px] tracking-tighter text-app-text transition-all duration-500 group-hover:pl-4">
     {title}
   </h3>
 );
@@ -30,7 +30,7 @@ const ProjectDescription: React.FC<{ description: string }> = ({
   description,
 }) => (
   <div className="flex flex-col md:items-end gap-2 font-mono text-xs md:text-sm uppercase tracking-widest text-neutral-400">
-    <span className="text-white transition-colors duration-300">
+    <span className="text-app-text transition-colors duration-300">
       {description}
     </span>
   </div>

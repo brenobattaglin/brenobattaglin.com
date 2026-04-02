@@ -17,7 +17,7 @@ const SocialLinkItem: React.FC<SocialLink> = ({ name, url }) => (
     href={url}
     target="_blank"
     rel="noopener noreferrer"
-    className="font-mono text-[11px] uppercase tracking-widest text-neutral-400 hover:text-white transition-colors"
+    className="font-mono text-[11px] uppercase tracking-widest text-neutral-400 hover:text-app-text transition-colors"
   >
     {name}
   </a>
@@ -33,7 +33,7 @@ const Copyright: React.FC = () => (
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-black border-t border-neutral-900">
+    <footer className="w-full bg-app-bg border-t border-app-text/10">
       <div className="container mx-auto px-6 md:px-12 py-8 md:py-12 flex flex-col md:flex-row justify-between items-center gap-6">
         <Copyright />
         <div className="flex gap-8">
