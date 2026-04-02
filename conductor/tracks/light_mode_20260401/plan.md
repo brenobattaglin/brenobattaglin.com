@@ -7,8 +7,8 @@
 - [x] Task: Conductor - User Manual Verification 'Foundation (Theme Context & Storage)' (Protocol in workflow.md) c424f9f
 
 ## Phase 2: Global Styling Strategy
-- [ ] Task: Update `index.css` to define theme-aware CSS variables for background, text, and other key colors using `@theme`.
-- [ ] Task: Modify the `body` styles in `index.css` to use these variables, ensuring they update based on the theme.
+- [x] Task: Update `index.css` to define theme-aware CSS variables for background, text, and other key colors using `@theme`. 20f19ec
+- [x] Task: Modify the `body` styles in `index.css` to use these variables, ensuring they update based on the theme. 20f19ec
 - [ ] Task: Conductor - User Manual Verification 'Global Styling Strategy' (Protocol in workflow.md)
 
 ## Phase 3: Icons & Toggle Component
