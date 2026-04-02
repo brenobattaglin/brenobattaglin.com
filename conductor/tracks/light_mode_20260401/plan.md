@@ -13,8 +13,8 @@
 
 ## Phase 3: Icons & Toggle Component
 - [x] Task: Create `components/icons/SunIcon.tsx` and `components/icons/MoonIcon.tsx`. 793b802
-- [ ] Task: Update `components/Header.tsx` to include the theme toggle button with the new icons.
-- [ ] Task: Update `components/Header.test.tsx` to verify the toggle functionality and icon switching.
+- [x] Task: Update `components/Header.tsx` to include the theme toggle button with the new icons. ba94c9c
+- [x] Task: Update `components/Header.test.tsx` to verify the toggle functionality and icon switching. ba94c9c
 - [ ] Task: Conductor - User Manual Verification 'Icons & Toggle Component' (Protocol in workflow.md)
 
 ## Phase 4: Component Theming Refactor [checkpoint: 5068f21]
