@@ -1,4 +1,7 @@
 import React from 'react';
+import { useTheme } from '../hooks/useTheme';
+import { SunIcon } from './icons/SunIcon';
+import { MoonIcon } from './icons/MoonIcon';
 
 interface NavLinkProps {
   label: string;
@@ -45,8 +48,10 @@ const NavLink: React.FC<NavLinkProps> = ({ label, href }) => {
 };
 
 export const Header: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
-    <header className="fixed top-0 left-0 w-full px-6 py-6 md:px-12 md:py-8 flex justify-center items-center z-40 dark:mix-blend-difference text-app-text">
+    <header className="fixed top-0 left-0 w-full px-6 py-6 md:px-12 md:py-8 flex justify-between items-center z-40 dark:mix-blend-difference text-app-text">
       <nav>
         <ul className="flex space-x-8 font-mono text-xs md:text-sm tracking-widest uppercase">
           {NAV_ITEMS.map((item) => (
@@ -54,6 +59,18 @@ export const Header: React.FC = () => {
           ))}
         </ul>
       </nav>
+
+      <button
+        onClick={toggleTheme}
+        className="p-2 hover:bg-app-text/10 rounded-full transition-colors focus:outline-hidden"
+        aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
+      >
+        {theme === 'dark' ? (
+          <SunIcon className="w-5 h-5" />
+        ) : (
+          <MoonIcon className="w-5 h-5" />
+        )}
+      </button>
     </header>
   );
 };
