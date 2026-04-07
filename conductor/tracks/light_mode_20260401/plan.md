@@ -23,6 +23,6 @@
 - [x] Task: Conductor - User Manual Verification 'Component Refactor (Theming)' (Protocol in workflow.md) 5068f21
 
 ## Phase 5: Final Quality Pass
-- [ ] Task: Run the full test suite (`npm test`) and ensure all tests pass with >90% coverage.
-- [ ] Task: Perform a final visual and accessibility audit in both Light and Dark modes.
-- [ ] Task: Conductor - User Manual Verification 'Final Quality Pass' (Protocol in workflow.md)
+- [x] Task: Run the full test suite (`npm test`) and ensure all tests pass with >90% coverage. 6137bda
+- [x] Task: Perform a final visual and accessibility audit in both Light and Dark modes. 6137bda
+- [x] Task: Conductor - User Manual Verification 'Final Quality Pass' (Protocol in workflow.md) 6137bda
