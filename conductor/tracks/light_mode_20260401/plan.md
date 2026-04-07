@@ -15,7 +15,7 @@
 - [x] Task: Create `components/icons/SunIcon.tsx` and `components/icons/MoonIcon.tsx`. 793b802
 - [x] Task: Update `components/Header.tsx` to include the theme toggle button with the new icons. ba94c9c
 - [x] Task: Update `components/Header.test.tsx` to verify the toggle functionality and icon switching. ba94c9c
-- [ ] Task: Conductor - User Manual Verification 'Icons & Toggle Component' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Icons & Toggle Component' (Protocol in workflow.md) [checkpoint: 6137bda]
 
 ## Phase 4: Component Theming Refactor [checkpoint: 5068f21]
 - [x] Task: Update `components/About.tsx`, `components/WorkList.tsx`, `components/WorkItem.tsx`, `components/Contact.tsx`, and `components/Footer.tsx` to use Tailwind's `dark:` classes or theme-aware CSS variables. 5068f21
