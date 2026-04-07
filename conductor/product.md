@@ -20,6 +20,7 @@ To create a high-impact, professional, and minimalist personal website that serv
 - **About Me Section:** Personal narrative, background, and professional journey.
 - **Work/Projects Section:** Showcasing key projects and contributions.
 - **Contact Information:** Direct links to professional profiles (Email, LinkedIn).
+- **Theme Toggle:** Switch between Light and Dark modes with persistent user preference.
 
 ## Style & Vibe
 
