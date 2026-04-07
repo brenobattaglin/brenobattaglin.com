@@ -14,5 +14,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [~] **Track: light mode. Idea is having an icon to toggle light and dark mode, saving the user's choice on client side for the next time he/she enters the page again.**
+- [x] **Track: light mode. Idea is having an icon to toggle light and dark mode, saving the user's choice on client side for the next time he/she enters the page again.**
 *Link: [./tracks/light_mode_20260401/](./tracks/light_mode_20260401/)*
