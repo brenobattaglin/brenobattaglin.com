@@ -50,7 +50,7 @@ describe('useTheme', () => {
   it('should apply theme class to document.documentElement', () => {
     const { result } = renderHook(() => useTheme());
     expect(document.documentElement.classList.contains('dark')).toBe(true);
-    
+
     act(() => {
       result.current.toggleTheme();
     });

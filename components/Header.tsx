@@ -51,7 +51,9 @@ export const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <header className={`fixed top-0 left-0 w-full px-6 py-6 md:px-12 md:py-8 flex justify-center items-center z-40 ${theme === 'light' ? 'text-black' : 'text-white'}`}>
+    <header
+      className={`fixed top-0 left-0 w-full px-6 py-6 md:px-12 md:py-8 flex justify-center items-center z-40 ${theme === 'light' ? 'text-black' : 'text-white'}`}
+    >
       <nav>
         <ul className="flex space-x-8 font-mono text-xs md:text-sm tracking-widest uppercase">
           {NAV_ITEMS.map((item) => (
