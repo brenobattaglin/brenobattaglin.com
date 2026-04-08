@@ -36,11 +36,11 @@ export const WorkList: React.FC = () => {
     <section id="works" className="w-full pb-20">
       <div
         ref={elementRef}
-        className={`container mx-auto px-6 md:px-12 py-12 border-b border-neutral-800 mb-10 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+        className={`container mx-auto px-6 md:px-12 py-12 border-b border-app-text/10 mb-10 transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
       >
         <div className="flex justify-between items-end mb-4">
           <h4 className="font-mono text-xs md:text-sm text-neutral-400 uppercase tracking-[0.2em]">
-            Works <span className="text-white">(04)</span>
+            Works <span className="text-app-text">(04)</span>
           </h4>
           <span className="font-mono text-[10px] text-neutral-600 uppercase tracking-widest hidden md:inline-block">
             Scroll to explore

@@ -53,4 +53,18 @@ describe('Header component', () => {
 
     expect(window.scrollTo).not.toHaveBeenCalled();
   });
+
+  it('should toggle theme when the button is clicked', () => {
+    const { getByLabelText } = render(<Header />);
+    const toggleButton = getByLabelText(/Switch to light mode/i);
+
+    fireEvent.click(toggleButton);
+
+    expect(localStorage.setItem).toHaveBeenCalledWith(
+      'theme-preference',
+      'light',
+    );
+    expect(document.documentElement.classList.contains('light')).toBe(true);
+    expect(getByLabelText(/Switch to dark mode/i)).toBeInTheDocument();
+  });
 });

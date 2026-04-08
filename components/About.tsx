@@ -44,10 +44,10 @@ const CircularGraphic: React.FC<{ isVisible: boolean }> = ({ isVisible }) => (
   <div
     className={`absolute bottom-[15vh] ${ANIMATION_CLASSES.fadeInScale(isVisible)}`}
   >
-    <div className="relative w-48 h-48 md:w-64 md:h-64 border border-white/5 rounded-full flex items-center justify-center">
-      <div className="absolute inset-0 border border-white/10 rounded-full animate-spin-slow" />
-      <div className="w-32 h-32 md:w-48 md:h-48 border border-white/10 rounded-full flex items-center justify-center">
-        <div className="w-1 h-1 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,0.8)]" />
+    <div className="relative w-48 h-48 md:w-64 md:h-64 border border-app-text/5 rounded-full flex items-center justify-center">
+      <div className="absolute inset-0 border border-app-text/10 rounded-full animate-spin-slow" />
+      <div className="w-32 h-32 md:w-48 md:h-48 border border-app-text/10 rounded-full flex items-center justify-center">
+        <div className="w-1 h-1 bg-app-text rounded-full shadow-[0_0_10px_rgba(var(--foreground),0.8)]" />
       </div>
     </div>
   </div>
@@ -58,13 +58,13 @@ const ScrollIndicator: React.FC = () => (
     <span className="font-mono text-[10px] tracking-widest uppercase opacity-60">
       Scroll
     </span>
-    <div className="w-px h-12 bg-white/30" />
+    <div className="w-px h-12 bg-app-text/30" />
   </div>
 );
 
 const AmbientLight: React.FC = () => (
   <div className="absolute inset-0 pointer-events-none">
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-[120px] animate-pulse-slow" />
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-app-text/5 rounded-full blur-[120px] animate-pulse-slow" />
   </div>
 );
 
@@ -82,7 +82,7 @@ export const Hero: React.FC = () => {
       <div
         className={`relative z-10 flex flex-col items-center ${ANIMATION_CLASSES.fadeInUp(isVisible)}`}
       >
-        <h1 className="font-serif text-[12vw] md:text-[10vw] lg:text-[8vw] xl:text-[140px] 2xl:text-[180px] max-w-[1400px] leading-[0.9] text-center tracking-tighter mix-blend-screen text-white">
+        <h1 className="font-serif text-[12vw] md:text-[10vw] lg:text-[8vw] xl:text-[140px] 2xl:text-[180px] max-w-[1400px] leading-[0.9] text-center tracking-tighter dark:mix-blend-screen text-app-text">
           BRENO
           <br />
           BATTAGLIN
