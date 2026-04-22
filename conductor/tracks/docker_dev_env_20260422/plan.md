@@ -3,12 +3,12 @@
 ## Phase 1: Dockerization
 Goal: Create the necessary Docker files and ensure the container can build and start.
 
-- [ ] Task: Create `Dockerfile` for development
-    - [ ] Create `Dockerfile` using `node:22-alpine`
-    - [ ] Configure work directory and copy package files
-    - [ ] Install dependencies
-    - [ ] Set default command to `npm run dev`
-- [ ] Task: Create `docker-compose.yml`
+- [x] Task: Create `Dockerfile` for development (a97b4f4)
+    - [x] Create `Dockerfile` using `node:22-alpine`
+    - [x] Configure work directory and copy package files
+    - [x] Install dependencies
+    - [x] Set default command to `npm run dev`
+- [~] Task: Create `docker-compose.yml`
     - [ ] Define the `app` service
     - [ ] Configure port mapping (5173:5173)
     - [ ] Configure volume mappings for source code and `node_modules`
