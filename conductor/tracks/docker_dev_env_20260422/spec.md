@@ -16,10 +16,10 @@ Establish a robust, reproducible development environment using Docker and Docker
 - **Maintainability:** Follow best practices for Dockerfiles (e.g., proper caching of layers).
 
 ## Acceptance Criteria
-- [ ] `docker compose up` starts the development server.
+- [ ] `docker-compose up` starts the development server.
 - [ ] The website is accessible at `http://localhost:5173`.
 - [ ] Editing a source file triggers a hot reload in the browser.
-- [ ] Running tests inside the container (`docker compose exec app npm test`) works as expected.
+- [ ] Running tests inside the container (`docker-compose exec app npm test`) works as expected.
 - [ ] `node_modules` are managed within the container and don't require local installation for Docker to work.
 
 ## Out of Scope

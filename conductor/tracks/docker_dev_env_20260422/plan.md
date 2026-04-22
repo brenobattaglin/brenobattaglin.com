@@ -22,11 +22,11 @@ Goal: Create the necessary Docker files and ensure the container can build and s
 Goal: Verify hot reloading, test execution, and persistence.
 
 - [ ] Task: Verify Hot Reloading
-    - [ ] Start the environment with `docker compose up` or `make dev`
+    - [ ] Start the environment with `docker-compose up` or `make dev`
     - [ ] Modify a component and observe changes in the browser
 - [ ] Task: Verify Dev Tooling
-    - [ ] Run `docker compose exec app npm test` or `make test`
-    - [ ] Run `docker compose exec app npm run lint` or `make lint`
+    - [ ] Run `docker-compose exec app npm test` or `make test`
+    - [ ] Run `docker-compose exec app npm run lint` or `make lint`
 - [ ] Task: Optimize Docker configuration
     - [ ] Add `.dockerignore` to prevent unnecessary files from being copied
     - [ ] Refine volume mappings for performance
