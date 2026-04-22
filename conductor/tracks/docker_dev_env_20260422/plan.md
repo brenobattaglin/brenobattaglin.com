@@ -1,6 +1,6 @@
 # Implementation Plan - Docker Development Environment
 
-## Phase 1: Dockerization
+## Phase 1: Dockerization [checkpoint: b99a197]
 Goal: Create the necessary Docker files and ensure the container can build and start.
 
 - [x] Task: Create `Dockerfile` for development (a97b4f4)
@@ -16,12 +16,12 @@ Goal: Create the necessary Docker files and ensure the container can build and s
 - [x] Task: Create `Makefile` (969c97a)
     - [x] Define commands for `up`, `down`, `build`, `test`, `lint`, and `shell`
     - [x] Ensure commands are easy to use (e.g., `make dev`, `make test`)
-- [~] Task: Conductor - User Manual Verification 'Dockerization' (Protocol in workflow.md)
+- [x] Task: Conductor - User Manual Verification 'Dockerization' (Protocol in workflow.md)
 
 ## Phase 2: Verification and Refinement
 Goal: Verify hot reloading, test execution, and persistence.
 
-- [ ] Task: Verify Hot Reloading
+- [~] Task: Verify Hot Reloading
     - [ ] Start the environment with `docker-compose up` or `make dev`
     - [ ] Modify a component and observe changes in the browser
 - [ ] Task: Verify Dev Tooling
