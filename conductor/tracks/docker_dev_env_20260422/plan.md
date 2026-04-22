@@ -18,16 +18,16 @@ Goal: Create the necessary Docker files and ensure the container can build and s
     - [x] Ensure commands are easy to use (e.g., `make dev`, `make test`)
 - [x] Task: Conductor - User Manual Verification 'Dockerization' (Protocol in workflow.md)
 
-## Phase 2: Verification and Refinement
+## Phase 2: Verification and Refinement [checkpoint: 0fb8064]
 Goal: Verify hot reloading, test execution, and persistence.
 
-- [~] Task: Verify Hot Reloading
-    - [ ] Start the environment with `docker-compose up` or `make dev`
-    - [ ] Modify a component and observe changes in the browser
-- [ ] Task: Verify Dev Tooling
-    - [ ] Run `docker-compose exec app npm test` or `make test`
-    - [ ] Run `docker-compose exec app npm run lint` or `make lint`
-- [ ] Task: Optimize Docker configuration
-    - [ ] Add `.dockerignore` to prevent unnecessary files from being copied
-    - [ ] Refine volume mappings for performance
-- [ ] Task: Conductor - User Manual Verification 'Verification and Refinement' (Protocol in workflow.md)
+- [x] Task: Verify Hot Reloading (2a4e87e)
+    - [x] Start the environment with `docker-compose up` or `make dev`
+    - [x] Modify a component and observe changes in the browser
+- [x] Task: Verify Dev Tooling (2a4e87e)
+    - [x] Run `docker-compose exec app npm test` or `make test`
+    - [x] Run `docker-compose exec app npm run lint` or `make lint`
+- [x] Task: Optimize Docker configuration (8aa71a8)
+    - [x] Add `.dockerignore` to prevent unnecessary files from being copied
+    - [x] Refine volume mappings for performance
+- [x] Task: Conductor - User Manual Verification 'Verification and Refinement' (Protocol in workflow.md)
