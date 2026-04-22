@@ -156,6 +156,20 @@ Before marking any task complete, verify:
 
 **AI AGENT INSTRUCTION: This section should be adapted to the project's specific language, framework, and build tools.**
 
+### Docker Development (Recommended)
+
+```bash
+make build    # Build images
+make dev      # Start dev environment (alias for up)
+make up       # Start dev environment
+make down     # Stop environment
+make test     # Run tests in container
+make lint     # Run linting in container
+make shell    # Open a shell in the container
+```
+
+### Local Setup (Manual)
+
 ### Setup
 
 ```bash
