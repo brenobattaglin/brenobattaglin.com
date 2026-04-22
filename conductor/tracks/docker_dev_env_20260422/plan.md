@@ -13,10 +13,10 @@ Goal: Create the necessary Docker files and ensure the container can build and s
     - [x] Configure port mapping (5173:5173)
     - [x] Configure volume mappings for source code and `node_modules`
     - [x] Add environment variables if necessary
-- [~] Task: Create `Makefile`
-    - [ ] Define commands for `up`, `down`, `build`, `test`, `lint`, and `shell`
-    - [ ] Ensure commands are easy to use (e.g., `make dev`, `make test`)
-- [ ] Task: Conductor - User Manual Verification 'Dockerization' (Protocol in workflow.md)
+- [x] Task: Create `Makefile` (969c97a)
+    - [x] Define commands for `up`, `down`, `build`, `test`, `lint`, and `shell`
+    - [x] Ensure commands are easy to use (e.g., `make dev`, `make test`)
+- [~] Task: Conductor - User Manual Verification 'Dockerization' (Protocol in workflow.md)
 
 ## Phase 2: Verification and Refinement
 Goal: Verify hot reloading, test execution, and persistence.
