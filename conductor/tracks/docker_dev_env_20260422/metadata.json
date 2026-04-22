@@ -1,0 +1,8 @@
+{
+  "track_id": "docker_dev_env_20260422",
+  "type": "chore",
+  "status": "new",
+  "created_at": "2026-04-22T12:00:00Z",
+  "updated_at": "2026-04-22T12:00:00Z",
+  "description": "Please let's start planning on running this project using docker. Idea is having a dev enviroment by running the docker compose, having hot reload and all other features"
+}
