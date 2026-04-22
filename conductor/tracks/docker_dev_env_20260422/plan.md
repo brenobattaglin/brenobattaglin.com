@@ -8,12 +8,12 @@ Goal: Create the necessary Docker files and ensure the container can build and s
     - [x] Configure work directory and copy package files
     - [x] Install dependencies
     - [x] Set default command to `npm run dev`
-- [~] Task: Create `docker-compose.yml`
-    - [ ] Define the `app` service
-    - [ ] Configure port mapping (5173:5173)
-    - [ ] Configure volume mappings for source code and `node_modules`
-    - [ ] Add environment variables if necessary
-- [ ] Task: Create `Makefile`
+- [x] Task: Create `docker-compose.yml` (51ecf42)
+    - [x] Define the `app` service
+    - [x] Configure port mapping (5173:5173)
+    - [x] Configure volume mappings for source code and `node_modules`
+    - [x] Add environment variables if necessary
+- [~] Task: Create `Makefile`
     - [ ] Define commands for `up`, `down`, `build`, `test`, `lint`, and `shell`
     - [ ] Ensure commands are easy to use (e.g., `make dev`, `make test`)
 - [ ] Task: Conductor - User Manual Verification 'Dockerization' (Protocol in workflow.md)
