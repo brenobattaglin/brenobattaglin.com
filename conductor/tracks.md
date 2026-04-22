@@ -14,5 +14,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Please let's start planning on running this project using docker. Idea is having a dev enviroment by running the docker compose, having hot reload and all other features**
+- [x] **Track: Please let's start planning on running this project using docker. Idea is having a dev enviroment by running the docker compose, having hot reload and all other features**
 *Link: [./tracks/docker_dev_env_20260422/](./tracks/docker_dev_env_20260422/)*
