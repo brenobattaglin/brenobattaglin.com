@@ -1,0 +1,13 @@
+node_modules
+dist
+.vite
+.vite_cache
+coverage
+.git
+.github
+README.md
+LICENSE.md
+conductor
+Dockerfile
+docker-compose.yml
+Makefile

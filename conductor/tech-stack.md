@@ -11,6 +11,11 @@
 - **Styling:** Tailwind CSS 4 - Utility-first CSS framework for rapid and consistent UI development. Uses theme-aware CSS variables for centralized theme management.
 - **Font Hosting:** Local Hosting - Fonts (Italiana, JetBrains Mono, Inter) are hosted locally in `public/fonts/` to improve privacy, performance, and reliability.
 
+## DevOps & Tooling
+
+- **Containerization:** Docker & Docker Compose - Provides a reproducible development environment.
+- **Task Runner:** Makefile - Simplifies common development and Docker commands.
+
 ## Tooling & Quality Assurance
 
 - **Linting:** ESLint - Enforces code quality and catches potential errors.
