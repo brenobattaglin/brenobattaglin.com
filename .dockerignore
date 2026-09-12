@@ -9,5 +9,6 @@ README.md
 LICENSE.md
 conductor
 Dockerfile
+compose.yaml
 docker-compose.yml
 Makefile
