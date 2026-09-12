@@ -13,8 +13,8 @@
 
 ## DevOps & Tooling
 
-- **Containerization:** Docker & Docker Compose - Provides a reproducible development environment.
-- **Task Runner:** Makefile - Simplifies common development and Docker commands.
+- **Containerization:** Rootless Podman & Docker Compose - Provides a secure, rootless, and reproducible container development environment.
+- **Task Runner:** Makefile - Automates common workflows and automatically detects Podman or Docker Compose.
 
 ## Tooling & Quality Assurance
 

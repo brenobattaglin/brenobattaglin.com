@@ -1,21 +1,42 @@
-.PHONY: dev up down build test lint shell
+# Container compose command (prefers podman compose if podman is installed, falls back to docker compose)
+COMPOSE ?= $(shell if command -v podman >/dev/null 2>&1; then echo "podman compose"; elif docker compose version >/dev/null 2>&1; then echo "docker compose"; else echo "docker-compose"; fi)
+
+.PHONY: dev up down build test test-watch lint lint-fix shell clean machine-start
+
+machine-start:
+	@if command -v podman >/dev/null 2>&1 && [ "$$(uname -s)" = "Darwin" ]; then \
+		if ! podman machine info >/dev/null 2>&1; then \
+			echo "Starting Podman machine..."; \
+			podman machine start; \
+		fi \
+	fi
 
 dev: up
 
-up:
-	docker-compose up
+up: machine-start
+	$(COMPOSE) up
 
 down:
-	docker-compose down
+	$(COMPOSE) down
 
 build:
-	docker-compose build
+	$(COMPOSE) build
 
 test:
-	docker-compose exec app npm test
+	$(COMPOSE) exec app npm run test:run
+
+test-watch:
+	$(COMPOSE) exec app npm test
 
 lint:
-	docker-compose exec app npm run lint
+	$(COMPOSE) exec app npm run lint
+
+lint-fix:
+	$(COMPOSE) exec app npm run lint:fix
 
 shell:
-	docker-compose exec app sh
+	$(COMPOSE) exec app sh
+
+clean:
+	$(COMPOSE) down -v
+
