@@ -1,16 +1,24 @@
-FROM node:22-alpine
-
+# Stage 1: Build CSS and WASM with standalone Tailwind and Trunk
+FROM rust:1-alpine AS builder
+RUN apk add --no-cache musl-dev pkgconfig openssl-dev curl
+RUN curl -L https://github.com/trunk-rs/trunk/releases/latest/download/trunk-x86_64-unknown-linux-musl.tar.gz | tar xz -C /usr/local/bin
+RUN rustup target add wasm32-unknown-unknown
 WORKDIR /app
 
-# Install dependencies first for better caching
-COPY package*.json ./
-RUN npm install
+# Download standalone Tailwind CLI (Linux x64)
+RUN mkdir -p bin && \
+    curl -sLo bin/tailwindcss https://github.com/tailwindlabs/tailwindcss/releases/download/v4.1.8/tailwindcss-linux-x64 && \
+    chmod +x bin/tailwindcss
 
-# Copy the rest of the application code
-COPY . .
+COPY Cargo.toml Cargo.lock* ./
+COPY src/ src/
+COPY style/ style/
+COPY public/ public/
+COPY index.html Trunk.toml ./
+RUN trunk build --release
 
-# Expose Vite's default port
-EXPOSE 5173
-
-# Default command for development
-CMD ["npm", "run", "dev", "--", "--host"]
+# Stage 2: Serve with nginx
+FROM nginx:alpine
+COPY --from=builder /app/dist /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
