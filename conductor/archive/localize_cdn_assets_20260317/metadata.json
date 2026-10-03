@@ -1,8 +1,0 @@
-{
-  "track_id": "localize_cdn_assets_20260317",
-  "type": "chore",
-  "status": "new",
-  "created_at": "2026-03-18T21:30:00Z",
-  "updated_at": "2026-03-18T21:30:00Z",
-  "description": "now let's work on the removal of cdns. Proceed with a local approach for this. For instance, in case there is a font used via cdn, download it to get rid of the cdn, then apply where it should be."
-}
