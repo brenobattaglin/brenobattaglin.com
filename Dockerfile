@@ -1,7 +1,7 @@
 # Stage 1: Build CSS and WASM with standalone Tailwind and Trunk
 FROM rust:1-alpine AS builder
 RUN apk add --no-cache musl-dev pkgconfig openssl-dev curl
-RUN curl -L https://github.com/trunk-rs/trunk/releases/latest/download/trunk-x86_64-unknown-linux-musl.tar.gz | tar xz -C /usr/local/bin
+RUN curl -L https://github.com/trunk-rs/trunk/releases/download/v0.21.14/trunk-x86_64-unknown-linux-musl.tar.gz | tar xz -C /usr/local/bin
 RUN rustup target add wasm32-unknown-unknown
 WORKDIR /app
 

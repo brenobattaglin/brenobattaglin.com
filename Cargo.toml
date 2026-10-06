@@ -4,7 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-leptos = { version = "0.7", features = ["csr"] }
 wasm-bindgen = "0.2"
 web-sys = { version = "0.3", features = [
     "Window",
@@ -18,16 +17,19 @@ web-sys = { version = "0.3", features = [
     "ScrollToOptions",
     "ScrollBehavior",
     "DomRect",
+    "Event",
+    "EventTarget",
+    "HtmlElement",
+    "Node",
+    "NodeList",
 ] }
 js-sys = "0.3"
 console_error_panic_hook = "0.1"
 
 [profile.dev]
-# 1 = line tables only (retains panic backtrace line numbers without massive DWARF symbols)
 debug = 1
 
 [profile.release]
-# Optimize for size and strip unneeded symbols
 opt-level = "z"
 lto = true
 codegen-units = 1

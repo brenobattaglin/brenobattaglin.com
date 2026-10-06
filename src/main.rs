@@ -1,8 +1,17 @@
-mod app;
+mod behavior;
 mod components;
-mod hooks;
 
 fn main() {
     console_error_panic_hook::set_once();
-    leptos::mount::mount_to_body(app::App);
+
+    let document = web_sys::window()
+        .expect("no window")
+        .document()
+        .expect("no document");
+    document
+        .body()
+        .expect("no body")
+        .set_inner_html(&components::page());
+
+    behavior::init(&document);
 }
