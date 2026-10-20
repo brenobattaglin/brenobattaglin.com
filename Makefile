@@ -24,8 +24,11 @@ endif
 $(TAILWIND_BIN):
 	@mkdir -p bin
 	@echo "Downloading standalone Tailwind CSS $(TAILWIND_VERSION)..."
-	@curl -sLo $(TAILWIND_BIN) $(TAILWIND_URL)
-	@chmod +x $(TAILWIND_BIN)
+	@set -e; tmp=$$(mktemp bin/tailwindcss.XXXXXX); \
+		trap 'rm -f "$$tmp"' EXIT; \
+		curl --retry 3 -fSL -o "$$tmp" $(TAILWIND_URL); \
+		chmod +x "$$tmp"; \
+		mv "$$tmp" $(TAILWIND_BIN)
 
 .PHONY: dev build serve clean test lint format docker-up docker-down docker-build shell machine-start tailwind
 
@@ -38,7 +41,7 @@ serve: $(TAILWIND_BIN)
 	trunk serve --open
 
 build: $(TAILWIND_BIN)
-	trunk build --release
+	trunk build --release --locked
 
 clean:
 	trunk clean

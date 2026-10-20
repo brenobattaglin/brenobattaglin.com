@@ -1,9 +1,11 @@
 # Rust build artifacts
 /target/
-Cargo.lock
 
 # Trunk output
 /dist/
+
+# Local Vercel project settings and environment files
+/.vercel/
 
 # Generated CSS (built by Tailwind CLI)
 style/output.css
