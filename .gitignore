@@ -1,11 +1,7 @@
 /target/
-
 /dist/
-
 /.vercel/
-
 style/output.css
-
 bin/
 
 *.log

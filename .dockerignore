@@ -1,4 +1,7 @@
+target
 dist
+bin
+style/output.css
 .git
 .github
 README.md
@@ -6,5 +9,4 @@ LICENSE.md
 conductor
 Dockerfile
 compose.yaml
-docker-compose.yml
 Makefile
