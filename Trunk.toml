@@ -1,0 +1,14 @@
+[build]
+target = "index.html"
+dist = "dist"
+
+[watch]
+watch = ["src", "index.html", "style"]
+
+[serve]
+port = 5173
+
+[[hooks]]
+stage = "pre_build"
+command = "./bin/tailwindcss"
+command_arguments = ["-i", "style/input.css", "-o", "style/output.css"]
