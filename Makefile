@@ -1,10 +1,8 @@
-# Container compose command (prefers podman compose if podman is installed, falls back to docker compose)
 COMPOSE ?= $(shell if command -v podman >/dev/null 2>&1; then echo "podman compose"; elif docker compose version >/dev/null 2>&1; then echo "docker compose"; else echo "docker-compose"; fi)
 
 TAILWIND_VERSION ?= v4.1.8
 TAILWIND_BIN := bin/tailwindcss
 
-# Determine platform for standalone Tailwind binary
 OS := $(shell uname -s | tr '[:upper:]' '[:lower:]')
 ARCH := $(shell uname -m)
 ifeq ($(ARCH),x86_64)
@@ -34,7 +32,6 @@ $(TAILWIND_BIN):
 
 tailwind: $(TAILWIND_BIN)
 
-# Development (local)
 setup:
 	rustup component add rustfmt clippy
 	rustup target add wasm32-unknown-unknown
@@ -53,7 +50,6 @@ clean:
 	cargo clean
 	rm -rf style/output.css bin/
 
-# Linting and formatting
 lint:
 	cargo clippy --target wasm32-unknown-unknown -- -D warnings
 
@@ -63,11 +59,9 @@ format:
 format-check:
 	cargo fmt -- --check
 
-# Testing
 test:
 	cargo test
 
-# Docker
 machine-start:
 	@if command -v podman >/dev/null 2>&1 && [ "$$(uname -s)" = "Darwin" ]; then \
 		if ! podman machine info >/dev/null 2>&1; then \
