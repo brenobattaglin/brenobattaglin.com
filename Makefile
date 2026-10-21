@@ -30,11 +30,16 @@ $(TAILWIND_BIN):
 		chmod +x "$$tmp"; \
 		mv "$$tmp" $(TAILWIND_BIN)
 
-.PHONY: dev build serve clean test lint format docker-up docker-down docker-build shell machine-start tailwind
+.PHONY: setup dev build serve clean test lint format format-check docker-up docker-down docker-build shell machine-start tailwind
 
 tailwind: $(TAILWIND_BIN)
 
 # Development (local)
+setup:
+	rustup component add rustfmt clippy
+	rustup target add wasm32-unknown-unknown
+	cargo fetch --locked
+
 dev: serve
 
 serve: $(TAILWIND_BIN)
