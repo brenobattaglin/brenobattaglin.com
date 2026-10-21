@@ -1,8 +1,7 @@
-node_modules
+target
 dist
-.vite
-.vite_cache
-coverage
+bin
+style/output.css
 .git
 .github
 README.md
@@ -10,5 +9,4 @@ LICENSE.md
 conductor
 Dockerfile
 compose.yaml
-docker-compose.yml
 Makefile

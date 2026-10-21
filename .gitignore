@@ -1,28 +1,15 @@
-# Rust build artifacts
 /target/
-
-# Trunk output
 /dist/
-
-# Local Vercel project settings and environment files
 /.vercel/
-
-# Generated CSS (built by Tailwind CLI)
 style/output.css
-
-# Local binaries (standalone Tailwind CLI)
 bin/
 
-# Logs
 *.log
 
-# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
 *.suo
-*.ntvs*
-*.njsproj
 *.sln
 *.sw?

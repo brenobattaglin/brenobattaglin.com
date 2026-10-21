@@ -2,9 +2,6 @@
 @source "../src/**/*.rs";
 @source "../index.html";
 
-/* Local Fonts */
-
-/* Italiana */
 @font-face {
   font-family: 'Italiana';
   font-style: normal;
@@ -15,7 +12,6 @@
     url('/fonts/italiana-regular.ttf') format('truetype');
 }
 
-/* JetBrains Mono */
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
@@ -89,7 +85,6 @@
     url('/fonts/jetbrains-mono-800.ttf') format('truetype');
 }
 
-/* Inter */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
